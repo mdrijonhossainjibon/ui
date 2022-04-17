@@ -1,0 +1,125 @@
+.pg-mobile-created-api-key-modal {
+	.td-mobile-new-modal {
+		&__header {
+			display: none;
+		}
+
+		&__main {
+			padding: 0.5rem 1rem 2rem 1rem;
+
+			&__body {
+				margin: 0;
+			}
+		}
+	}
+
+	.td-mobile-modal {
+		&__body {
+			align-items: flex-start;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+
+			&__fieldset {
+				display: flex;
+				width: 100%;
+
+				&:first-child {
+					border-bottom: 1px solid rgba(132, 142, 156, 1);
+				}
+
+				fieldset {
+					display: flex;
+					width: 100%;
+
+					> div > .input-group {
+						align-items: center;
+						display: flex;
+						justify-content: space-between;
+						padding-bottom: 1.125rem;
+						padding-top: 0.938rem;
+
+						.mobile-custom-input {
+							align-items: flex-start;
+							display: flex;
+							flex-direction: column;
+							gap: 5px;
+							padding: 0;
+
+							label {
+								background-color: transparent !important;
+								color: rgb(var(--rgb-mobile-gray-color-2));
+								font-size: 0.75rem;
+								font-weight: 600;
+								margin: 0;
+								padding: 0;
+								position: initial;
+							}
+
+							input {
+								background-color: transparent !important;
+								color: rgb(var(--rgb-text-white));
+								font-size: 0.875rem;
+								font-weight: 600;
+								padding: 0;
+							}
+						}
+
+						.input-group-append {
+							button {
+								background-color: var(--main-background-color);
+								border-radius: var(--mobile-border-radius-large-size);
+								color: rgb(var(--rgb-mobile-gray-color-2));
+								font-size: 0.75rem;
+								font-weight: normal;
+								padding: 0.35rem 0.875rem;
+							}
+						}
+					}
+				}
+			}
+
+			&__title {
+				align-items: center;
+				display: flex;
+				flex-direction: row;
+				gap: 0.375rem;
+				justify-content: flex-start;
+				margin-bottom: 1rem;
+
+				span {
+					color: rgb(var(--rgb-text-white));
+					font-size: 0.875rem;
+					font-weight: 600;
+				}
+			}
+
+			&__note {
+				color: rgb(var(--rgb-mobile-gray-color-2));
+				font-size: 0.875rem;
+				font-weight: 400;
+				margin-bottom: 1.75rem;
+				text-align: left;
+
+				p:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		&__footer {
+			button {
+				align-items: center;
+				border-radius: var(--mobile-border-radius-full);
+				display: flex;
+				font-size: 1rem;
+				font-weight: 500;
+				height: unset;
+				justify-content: center;
+				letter-spacing: 1px;
+				padding: 0.563rem 1rem;
+				text-transform: capitalize;
+			}
+		}
+	}
+}

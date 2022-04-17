@@ -1,0 +1,57 @@
+.td-pg-profile__list-api-key {
+	.td-pg-profile__inner {
+		padding-top: 17px;
+	}
+
+	&__table {
+		display: flex;
+		flex-direction: column;
+		max-height: 100%;
+		width: 100%;
+
+		tbody,
+		thead {
+			tr {
+				display: flex;
+				padding-bottom: 15px;
+				width: 100%;
+
+				td,
+				th {
+					flex: 1;
+
+					&:first-child,
+					&:nth-child(5),
+					&:nth-child(6) {
+						flex: 2;
+					}
+
+					&:not(:first-child) {
+						text-align: right;
+					}
+
+					&:nth-child(4),
+					&:last-child {
+						text-align: center;
+					}
+				}
+			}
+		}
+
+		thead {
+			font-size: 14px;
+		}
+
+		tbody {
+			overflow-y: scroll;
+
+			tr {
+				td {
+					.ant-switch-checked {
+						background-color: var(--system-yellow);
+					}
+				}
+			}
+		}
+	}
+}

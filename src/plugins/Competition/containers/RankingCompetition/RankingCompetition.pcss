@@ -1,0 +1,69 @@
+#ranking-competition {
+	.ranking-competition__winner {
+		&__uid {
+			color: #2fb67e;
+			font-size: 36px;
+			font-weight: 500;
+			line-height: 42px;
+			padding-top: 8px;
+		}
+	}
+
+	.ranking-competition__listing {
+		&__title {
+			background: rgb(var(--rgb-subheader-background-color));
+			border-radius: 10px;
+			padding: 35px;
+			position: relative;
+
+			&__limit {
+				bottom: 0;
+				color: #fff;
+				font-size: 24px;
+				left: 100px;
+				line-height: 28px;
+				position: absolute;
+				top: 65px;
+			}
+		}
+
+		&__content {
+			background: rgb(var(--rgb-subheader-background-color));
+			box-shadow: 0 70px 100px rgba(0, 0, 0, 0.08);
+
+			table {
+				border-radius: 5px;
+				box-shadow: 0 70px 100px rgba(0, 0, 0, 0.08);
+				color: #fff;
+
+				thead {
+					background: #0c192f;
+					border-radius: 3px 3px 0 0;
+					font-size: 18px;
+
+					tr {
+						th {
+							border: none;
+							font-weight: normal;
+						}
+					}
+				}
+
+				tbody {
+					background: rgb(var(--rgb-subheader-background-color));
+					box-shadow: 0 70px 100px rgba(0, 0, 0, 0.08);
+
+					tr {
+						border-color: #0c1a32;
+						font-size: 15px;
+
+						td {
+							border-top: 1px solid #0c1a32;
+							vertical-align: middle;
+						}
+					}
+				}
+			}
+		}
+	}
+}

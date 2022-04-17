@@ -1,0 +1,99 @@
+#mobile-competition-item-running {
+	.mobile-competition-item-running__header {
+		background: rgb(var(--rgb-input-background-color));
+		position: relative;
+
+		&__type {
+			border-radius: 10px 0;
+			color: #fff;
+			font-size: 10px;
+			left: 0;
+			padding: 0.5rem 1.5rem;
+			position: absolute;
+		}
+
+		.type--stake {
+			background: #2fb67e !important;
+		}
+
+		.type--trade {
+			background: #e76f51 !important;
+		}
+
+		.type--deposit {
+			background: chocolate !important;
+		}
+
+		&__time {
+			background: #0085ff;
+			border-radius: 0 10px 0 17.5px;
+			color: #fff;
+			font-size: 10px;
+			font-weight: 600;
+			padding: 0.5rem 20px;
+			position: absolute;
+			right: 0;
+		}
+
+		&__icon {
+			padding: 2.75rem 0;
+
+			img {
+				border-radius: 50%;
+				height: 60px;
+				width: 60px;
+			}
+		}
+	}
+
+	.mobile-competition-item-running__content {
+		background: rgb(var(--rgb-subheader-background-color));
+		border-radius: 0 0 10px 10px;
+		padding: 0.5rem 1rem;
+
+		&__currency {
+			color: #fff;
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 16px;
+			padding: 1rem 0;
+		}
+
+		&__info {
+			font-style: normal;
+
+			&__item--title {
+				color: #999;
+				font-size: 1rem;
+				font-weight: normal;
+				line-height: 1.5rem;
+			}
+
+			&__item--value {
+				color: #fff;
+				font-size: 1rem;
+				line-height: 1.75rem;
+			}
+		}
+	}
+
+	.mobile-competition-item-running__detail {
+		background: rgb(var(--rgb-subheader-background-color));
+		border-radius: 0 0 10px 10px;
+		display: flex;
+		justify-content: center;
+		padding: 29px 0;
+
+		&__button {
+			background-color: var(--system-yellow);
+			border: none;
+			border-radius: 50px;
+			color: #fff;
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 16px;
+			outline: none;
+			padding: 12px 73px;
+		}
+	}
+}

@@ -1,0 +1,170 @@
+.cnt-order-book {
+	bottom: 0;
+	color: white;
+	height: calc(100% - 6px);
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	.td-order-book {
+		height: 100%;
+		padding-bottom: 15px;
+
+		&-item__negative {
+			color: var(--header-negative-text-color);
+		}
+
+		&-item__positive {
+			color: var(--header-positive-text-color);
+		}
+
+		&-tooltip {
+			bottom: 200px;
+		}
+
+		&-header {
+			background-color: var(--trading-header-background);
+			height: 42px;
+			padding: 10px;
+
+			svg {
+				cursor: pointer;
+			}
+
+			&__title {
+				h3 {
+					color: #fff;
+					font-size: 16px;
+					font-weight: bold;
+					line-height: 22px;
+				}
+			}
+		}
+
+		&-tbheader {
+			color: #848e9c;
+			display: flex;
+			font-size: 14px;
+			height: 40px;
+			padding: 6px 10px;
+
+			> div {
+				flex: 1;
+			}
+		}
+
+		&-ticker {
+			background-color: var(--trading-header-background);
+			font-size: 14px;
+			height: 40px;
+			padding: 10px;
+
+			&__last-price {
+				font-size: 18px;
+				line-height: 25px;
+			}
+
+			&__usd {
+				color: #848e9c;
+				padding-left: 1.5rem !important;
+			}
+		}
+
+		&-table {
+			display: block;
+			padding: 0 10px;
+
+			&--all {
+				height: calc((100% - 42px - 40px - 40px - 15px) / 2);
+			}
+
+			&--orther {
+				height: calc(100% - 42px - 40px - 40px);
+			}
+
+			thead,
+			tbody {
+				display: block;
+
+				tr {
+					background-color: transparent;
+					cursor: pointer;
+					display: block;
+					display: flex;
+					justify-content: space-between;
+
+					&:hover {
+						background-color: #4e5463;
+					}
+
+					th {
+						display: flex;
+					}
+
+					td {
+						flex: 1;
+						text-align: left;
+					}
+				}
+			}
+
+			tbody {
+				height: 100%;
+				overflow-y: scroll;
+
+				tr {
+					margin-bottom: 1px;
+					margin-top: 1px;
+
+					td {
+						height: 100%;
+					}
+				}
+			}
+
+			&.td-reverse-table-body {
+				tbody {
+					transform: rotate(180deg);
+
+					.td-order-book-table__empty_data {
+						transform: rotate(180deg);
+					}
+
+					tr {
+						direction: rtl;
+
+						td {
+							transform: rotate(180deg);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.cnt-order-book-tr {
+	position: relative;
+	z-index: 5;
+
+	&__show-percent-right {
+		background: rgba(47, 182, 126, 0.4);
+		height: 100%;
+		left: unset;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: -5;
+	}
+
+	&__show-percent-left {
+		background: rgba(224, 30, 90, 0.2);
+		height: 100%;
+		left: 0;
+		position: absolute;
+		right: unset;
+		top: 0;
+		z-index: -5;
+	}
+}

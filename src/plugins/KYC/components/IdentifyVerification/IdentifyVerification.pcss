@@ -1,0 +1,145 @@
+.ant-modal-body {
+	padding: 20px 40px;
+
+	.form-group {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 2rem;
+
+		.form-control {
+			background: var(--header-background-color);
+			border: none;
+			border-radius: 30px;
+			color: #ffff;
+			font-size: 14px;
+			height: 45px;
+			padding: 0 20px;
+		}
+	}
+
+	.identify-verification {
+		&__form {
+			h2 {
+				color: var(--yellow);
+				font-size: 24px;
+				margin-bottom: 0 !important;
+			}
+
+			h4 {
+				color: #fff;
+				font-size: 16px;
+				margin-bottom: 20px !important;
+				margin-top: 20px;
+			}
+
+			.form-group {
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 2rem;
+
+				&__selected {
+					background: var(--header-background-color);
+					border: 1px solid;
+					border-radius: 30px;
+					color: #ffff;
+					height: 45px;
+					padding: 0 20px;
+
+					#country {
+						align-items: center;
+						background: var(--header-background-color);
+						border: navajowhite;
+						color: #ffff;
+						display: flex;
+						justify-content: center;
+						margin-top: 12px;
+						width: 100%;
+
+						&:focus-visible {
+							outline: none;
+						}
+					}
+				}
+			}
+		}
+
+		&__sub-title {
+			color: #ffff;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 24px;
+		}
+
+		&__content {
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 20px;
+			margin-bottom: 26px;
+		}
+
+		&__action {
+			margin-top: 6rem;
+
+			.btn__anebled {
+				background: var(--yellow);
+				border: navajowhite;
+				border-radius: 30px;
+				color: #fff;
+				cursor: pointer;
+				outline: none;
+				padding: 12px 60px;
+			}
+
+			.btn_disabled {
+				background: var(--button-primary-cta-background-color-disabled);
+				border: navajowhite;
+				border: none;
+				border-radius: 30px;
+
+				/* color: var(--button-primary-cta-text-color-disabled); */
+				cursor: not-allowed;
+				outline: none;
+				padding: 12px 60px;
+			}
+		}
+
+		&__document-photo-type {
+			.document-photo-type__group {
+				.passport__actived {
+					color: var(--yellow);
+					fill: var(--yellow);
+				}
+
+				.driver__actived {
+					color: var(--yellow);
+					fill: var(--yellow);
+				}
+
+				.identify__actived {
+					color: var(--yellow);
+					fill: var(--yellow);
+				}
+
+				align-items: center;
+				background: var(--header-background-color);
+				border: 1px solid #ffff;
+				border-radius: 30px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				margin-bottom: 16px;
+				padding: 18px 20px;
+
+				&__name {
+					align-items: center;
+					display: flex;
+					flex-direction: row;
+
+					p {
+						margin-bottom: 0 !important;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+.history-screen__tabs__content__pagination__content {
+	align-items: center;
+	background: var(--tab-panel-background-color);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style: none;
+
+	&__item {
+		&__link {
+			background-color: #11223f;
+			border: 1px solid #737f92;
+			color: white;
+			cursor: pointer;
+			display: block;
+			font-size: 12px;
+			line-height: 18px;
+			margin: 10px 0 10px 10px;
+			min-height: 30px;
+			min-width: 30px;
+			padding-top: 10%;
+			text-align: center;
+			text-decoration: none;
+
+			&:hover {
+				border: 1px solid #3db489;
+				color: #3db489;
+			}
+
+			&--active {
+				border: 1px solid #3db489;
+				color: #3db489;
+			}
+
+			&--disable {
+				color: #737f92;
+				cursor: default;
+
+				&:hover {
+					border: 1px solid #737f92;
+					color: #737f92;
+				}
+			}
+		}
+	}
+}

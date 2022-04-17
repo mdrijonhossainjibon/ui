@@ -1,0 +1,43 @@
+/* stylelint-disable */
+.td-mobile-subheader {
+	align-items: center;
+	background: rgb(var(--rgb-subheader-background-color));
+	box-shadow: 0px 4px 8px rgba(var(--rgb-text-black), 0.2);
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0.938rem;
+	z-index: 100;
+
+	&__back,
+	&__close {
+		flex: 1;
+	}
+
+	&__title {
+		flex: 2;
+		font-weight: 600;
+	}
+
+	&__back {
+		display: flex;
+		align-items: center;
+		height: 100%;
+
+		svg {
+			margin-right: 5px;
+			cursor: pointer;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		font-size: 1em;
+		color: rgb(var(--rgb-yellow));
+		font-weight: 600;
+	}
+}

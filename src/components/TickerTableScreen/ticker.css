@@ -1,0 +1,19 @@
+.positive {
+	color: var(--system-green);
+}
+
+.negative {
+	color: var(--system-red);
+}
+
+.pg-ticker-table__pagination {
+	/* border-top: 1px solid; */
+	text-align: center;
+	padding: 12px 0 0;
+}
+.cr-mobile-table__pagination {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

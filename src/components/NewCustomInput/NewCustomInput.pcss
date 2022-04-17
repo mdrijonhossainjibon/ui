@@ -1,0 +1,45 @@
+.td-custom-input {
+	.input-group {
+		input {
+			background: var(--secondary-background-color) !important;
+			border: 0.5px solid #2b4064;
+			border-radius: 5px;
+			box-sizing: border-box;
+		}
+	}
+
+	label {
+		background: var(--input-background-color);
+		font-size: calc(var(--gap) * 2);
+		left: 5%;
+		margin-top: -8px;
+		padding: 0 calc(var(--gap) * 0.7);
+		position: absolute;
+		top: 0;
+		z-index: 5;
+	}
+
+	input,
+	input:focus {
+		background-color: rgba(196, 196, 196, 0.28) !important;
+		box-shadow: none;
+		color: var(--input-text-color);
+	}
+
+	input:focus-within {
+		border-color: var(--input-border-color-active);
+
+		label {
+			color: var(--input-label-color-active);
+		}
+	}
+
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus {
+		border: 1px solid var(--input-border-color);
+		-webkit-box-shadow: 0 0 0 1000px var(--input-background-color) inset;
+		-webkit-text-fill-color: var(--input-text-color);
+		transition: background-color 5000s ease-in-out 0s;
+	}
+}

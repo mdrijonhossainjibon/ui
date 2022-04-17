@@ -1,0 +1,215 @@
+.td-mobile-staking-detail {
+	font-size: 0.875rem;
+	padding: 1em;
+
+	&__title {
+		color: rgb(var(--rgb-text-white));
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin-bottom: 0.9em;
+	}
+
+	&__info {
+		margin-bottom: 1em;
+	}
+
+	&__note {
+		display: flex;
+		gap: 0.688em;
+		margin-bottom: 1em;
+
+		& > * {
+			background-color: rgb(var(--rgb-body-background-color));
+			border-radius: var(--mobile-border-radius-extra-large-size);
+			box-shadow: 0 4px 8px rgba(var(--rgb-black-text), 0.2);
+		}
+
+		&__left {
+			align-items: center;
+			color: rgb(var(--rgb-text-white));
+			display: flex;
+			flex-shrink: 0;
+			font-weight: 600;
+			justify-content: center;
+			width: 4.429em;
+		}
+
+		&__right {
+			color: rgb(var(--rgb-mobile-stake-list-color));
+			margin: 0;
+			padding: 1em 1em 1em 2em;
+		}
+	}
+
+	&__asset {
+		margin-bottom: 1.4em;
+
+		h5 {
+			font-size: 0.875rem;
+			font-weight: 700;
+			margin-bottom: 1em;
+		}
+	}
+
+	&__stake {
+		background: rgb(var(--rgb-body-background-color));
+		border-radius: var(--mobile-border-radius-large-size);
+		margin-bottom: 1.15em;
+		overflow: hidden;
+
+		.td-tabs-nav-operations {
+			display: none;
+		}
+
+		.td-tabs-nav-list {
+			background-color: rgba(var(--rgb-header-background-color), 0.5);
+			display: flex;
+			font-weight: 600;
+			width: 100%;
+
+			.td-tabs-tab {
+				align-items: center;
+				color: rgb(var(--rgb-mobile-text-gray));
+				display: flex;
+				flex-basis: 50%;
+				font-weight: 600;
+				height: 2.857em;
+				justify-content: center;
+
+				&.td-tabs-tab-active {
+					background-color: rgb(var(--rgb-yellow));
+					color: rgb(var(--rgb-text-white));
+				}
+			}
+		}
+	}
+
+	&__history {
+		background-color: rgb(var(--rgb-body-background-color));
+		border-radius: var(--mobile-border-radius-large-size);
+		margin-bottom: 2em;
+
+		> h3 {
+			color: rgb(var(--rgb-text-white)) !important;
+			font-size: 1rem;
+			font-weight: 700;
+			margin: 0;
+			padding: 1.25em 0.875em 0.5em 0.875em;
+			text-transform: uppercase;
+		}
+
+		.timezone {
+			color: rgb(var(--rgb-text-white));
+			display: block;
+			font-size: 0.75rem;
+			font-weight: 600;
+			padding: 0.5em 1em;
+			text-align: right;
+		}
+
+		#react-table-mobile {
+			min-height: 13em;
+
+			table {
+				thead tr {
+					border-top: none;
+				}
+
+				th {
+					background-color: rgb(var(--rgb-main-background-color));
+					color: rgb(183, 183, 183);
+					height: 2.143em;
+
+					span {
+						font-weight: 600 !important;
+					}
+				}
+			}
+
+			.pagination {
+				display: none;
+			}
+
+			.empty {
+				align-items: center;
+				background-color: transparent;
+				display: flex;
+				height: 10em;
+				justify-content: center;
+				padding: 0;
+
+				img,
+				p {
+					display: none;
+				}
+
+				&::before {
+					content: url('mobile/assets/icons/empty.svg');
+					width: 2.5em;
+				}
+			}
+		}
+	}
+
+	&__loggedIn {
+		padding: 1.56em 0 7.8em 0;
+
+		.container {
+			padding: 0 1em;
+		}
+
+		&__userLogIn {
+			background-color: rgb(var(--rgb-body-background-color));
+			background-image: none !important;
+			border-radius: var(--mobile-border-radius-large-size);
+			padding: 1.375em;
+
+			.td-mobile-staking-detail-loggedIn {
+				&__wrapper {
+					&__desription {
+						color: rgb(var(--rgb-text-white));
+						font-size: 0.875rem;
+						font-weight: 600;
+						line-height: 2;
+						margin-bottom: 1.5em;
+						text-align: center;
+					}
+
+					&__login {
+						align-items: center;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+
+						button {
+							background-color: rgb(var(--rgb-yellow));
+							border: none;
+							border-radius: var(--mobile-border-radius-full);
+							color: rgb(var(--rgb-text-white));
+							margin-bottom: 0.5em;
+							padding: 0.5em 1.5em;
+							text-transform: uppercase;
+						}
+
+						p {
+							color: rgb(var(--rgb-text-white));
+							font-size: 0.929em;
+							margin-bottom: 0;
+
+							span {
+								color: blue;
+								cursor: pointer;
+								font-weight: 600;
+								margin-left: 0.9em;
+
+								&:hover {
+									border-bottom: 1px solid rgb(var(--rgb-text-white));
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,72 @@
+#staking-info {
+	background-color: var(--order-header-color);
+	border-radius: 10px;
+	box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.15);
+	padding: 40px;
+	position: relative;
+
+	#event {
+		.event-image {
+			margin-right: 20px;
+
+			img {
+				max-height: 64px;
+				max-width: 64px;
+			}
+		}
+
+		.event-info {
+			display: flex;
+			flex-direction: column;
+
+			&__name {
+				color: #fff;
+				font-size: 2rem;
+			}
+
+			&__description {
+				color: #fff;
+				font-size: 1rem;
+			}
+		}
+	}
+
+	.buttons {
+		display: flex;
+		flex-direction: column;
+
+		.trade-btn,
+		.view-detail-btn {
+			border: none;
+			border-radius: 40px;
+			color: #fff;
+			cursor: pointer;
+			font-size: 14px;
+			font-weight: 700;
+			margin-bottom: 8px;
+			outline: none;
+			padding: 10px 20px;
+			transition: background-color 0.2s;
+		}
+
+		.trade-btn {
+			background-color: var(--yellow);
+			border: 1px solid var(--yellow);
+		}
+
+		.view-detail-btn {
+			background-color: rgb(73, 79, 96);
+			color: #fff;
+		}
+	}
+
+	.loading-spin {
+		background-color: var(--order-header-color);
+		content: '';
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+}

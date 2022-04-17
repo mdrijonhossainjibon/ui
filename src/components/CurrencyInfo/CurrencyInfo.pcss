@@ -1,0 +1,138 @@
+.cr-wallet-item__single {
+	align-items: center;
+	background: transparent;
+	border-bottom: 1px solid var(--divider-color-level-2);
+	display: flex;
+	margin: 0 calc(var(--gap) * 3);
+	padding: 0 0 calc(var(--gap) * 4);
+
+	&-balance {
+		display: flex;
+		flex-grow: 2;
+		justify-content: space-between;
+	}
+
+	&__image-icon {
+		margin-right: calc(var(--gap) * 1);
+		max-height: calc(var(--gap) * 10);
+	}
+
+	.cr-wallet-item {
+		&__icon-code {
+			background: transparent;
+			color: var(--primary-text-color);
+			font-size: calc(var(--gap) * 8);
+		}
+
+		&__amount-locked {
+			margin-right: calc(var(--gap) * 8);
+		}
+
+		&__balance,
+		&__amount-locked {
+			background: transparent;
+			color: var(--table-text-color);
+			display: flex;
+			font-size: calc(var(--gap) * 3);
+			line-height: 1;
+			margin-bottom: calc(var(--gap) * 0.6);
+			padding-top: 0;
+
+			&-amount,
+			&-locked {
+				background: transparent;
+				color: var(--wallets-balance-color);
+				font-size: calc(var(--gap) * 5);
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+.item1 {
+	align-self: center;
+	background: transparent;
+	color: wheat;
+	font-size: 1.8em;
+	font-weight: 600;
+	grid-area: balance;
+	line-height: 1;
+	padding-left: 10%;
+	text-align: left;
+}
+
+.item2 {
+	align-self: center;
+	background: transparent;
+	color: var(--table-text-color);
+	font-size: 1.4em;
+	grid-area: lock;
+	line-height: 1;
+	padding-left: 10%;
+	text-align: left;
+}
+
+.item3 {
+	align-self: center;
+	background: transparent;
+	color: wheat;
+	font-size: 1.8em;
+	font-weight: 600;
+	grid-area: balance_amount;
+	text-align: right;
+}
+
+.item4 {
+	align-self: center;
+	background: transparent;
+	color: var(--table-text-color);
+	font-size: 1.4em;
+	grid-area: lock_amount;
+	text-align: right;
+}
+
+.info-grid {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+		'balance balance_amount'
+		'lock lock_amount';
+	padding: 10px;
+	width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+	.item1 {
+		font-size: 1em;
+	}
+
+	.item2 {
+		font-size: 0.95em;
+	}
+
+	.item3 {
+		font-size: 1em;
+	}
+
+	.item4 {
+		font-size: 0.95em;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.item1 {
+		font-size: 0.85em;
+	}
+
+	.item2 {
+		font-size: 0.7em;
+	}
+
+	.item3 {
+		font-size: 0.85em;
+	}
+
+	.item4 {
+		font-size: 0.7em;
+	}
+}

@@ -1,0 +1,361 @@
+.td-mobile-pg-referral {
+	font-size: 0.875rem;
+	overflow-x: hidden;
+
+	&__banner {
+		img {
+			width: 100%;
+		}
+	}
+
+	&__rank {
+		padding: 1em var(--mobile-main-padding-size);
+
+		.container {
+			padding: 0;
+
+			.row {
+				margin: 0;
+			}
+		}
+
+		&__box {
+			margin-bottom: 1.1em;
+			padding: 0;
+
+			&__row {
+				align-items: center;
+				background: rgb(var(--rgb-body-background-color));
+				border-radius: var(--mobile-border-radius-large-size);
+				box-shadow: 0 2px 15px rgba(var(--rgb-text-black), 0.2);
+				display: flex;
+				gap: 0.7em;
+				justify-content: space-between;
+				padding: 1.2em 1.8em;
+
+				> div {
+					display: flex;
+					flex-direction: column;
+					gap: 0.3em;
+					max-width: unset;
+					padding: 0 !important;
+
+					&:nth-child(1) {
+						flex-basis: 0;
+
+						img {
+							margin: 0;
+						}
+					}
+
+					&:nth-child(2) {
+						flex-basis: auto;
+						flex-shrink: 1;
+						font-size: 0.875rem;
+						overflow: hidden;
+
+						> div {
+							margin: 0 !important;
+						}
+					}
+
+					&:nth-child(3) {
+						flex-basis: 0;
+						flex-shrink: 0;
+
+						> div {
+							margin: 0 !important;
+
+							&:first-child > span {
+								font-size: 0.813rem;
+								font-weight: 500;
+							}
+						}
+					}
+				}
+
+				&__commision__coin-name {
+					background-color: rgb(var(--rgb-yellow));
+					border-radius: var(--mobile-border-radius-large-size);
+					font-weight: 400;
+					padding: 0.16em 0.75em;
+					text-transform: uppercase;
+				}
+
+				&__rank {
+					&__mail {
+						font-weight: 700;
+					}
+
+					&__commision {
+						color: rgb(var(--rgb-yellow)) !important;
+						font-size: 0.875rem;
+						font-weight: 700;
+					}
+				}
+			}
+		}
+	}
+
+	&__loggedIn {
+		padding: 1.56em 0 7.8em 0;
+
+		.container {
+			padding: 0 1em;
+		}
+
+		&__userLogIn {
+			background-color: rgb(var(--rgb-body-background-color));
+			background-image: none !important;
+			border-radius: var(--mobile-border-radius-large-size);
+			padding: 1.375em;
+
+			.referral-loggedIn-userLogIn {
+				&__wrapper {
+					&__desription {
+						color: rgb(var(--rgb-text-white));
+						font-size: 0.875rem;
+						font-weight: 600;
+						line-height: 2;
+						margin-bottom: 1.5em;
+						text-align: center;
+					}
+
+					&__login {
+						align-items: center;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+
+						button {
+							background-color: rgb(var(--rgb-yellow));
+							border: none;
+							border-radius: var(--mobile-border-radius-full);
+							color: rgb(var(--rgb-text-white));
+							margin-bottom: 0.5em;
+							padding: 0.5em 1.5em;
+							text-transform: uppercase;
+						}
+
+						p {
+							color: rgb(var(--rgb-text-white));
+							font-size: 0.929em;
+							margin-bottom: 0;
+
+							span {
+								color: blue;
+								cursor: pointer;
+								font-weight: 600;
+								margin-left: 0.9em;
+
+								&:hover {
+									border-bottom: 1px solid rgb(var(--rgb-text-white));
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__detail {
+		h2 {
+			font-size: 18px;
+		}
+
+		&__container {
+			max-width: 100%;
+			width: 1040px;
+
+			&__notice {
+				background: rgb(var(--rgb-body-background-color));
+				border-radius: var(--mobile-border-radius-small-size);
+				padding: 1.85em 2.3em;
+			}
+		}
+	}
+
+	.td-mobile-referral-content {
+		.container {
+			padding: 0 1em;
+		}
+
+		&__wrapper {
+			background-color: rgb(var(--rgb-body-background-color));
+			border-radius: var(--mobile-border-radius-large-size);
+			padding: var(--mobile-main-padding-size);
+
+			> .row {
+				margin: 0;
+
+				> div {
+					padding: 0;
+
+					&:first-child > p {
+						color: rgb(177, 177, 177);
+						font-weight: 600 !important;
+					}
+
+					&:nth-child(2) {
+						margin-top: 3.2em;
+
+						.referral-container-content {
+							&__ID {
+								display: flex;
+								flex-direction: column;
+								gap: 0.6em;
+								margin: 0 !important;
+
+								> p {
+									color: rgb(var(--rgb-text-white));
+									font-weight: 600 !important;
+									margin: 0;
+
+									&:first-child {
+										color: rgb(177, 177, 177);
+									}
+								}
+							}
+
+							&__link {
+								align-items: flex-start !important;
+								flex-direction: column;
+								margin-top: 2.7em;
+
+								p {
+									color: rgb(177, 177, 177);
+									font-weight: 600 !important;
+									margin-bottom: 0.7em;
+								}
+
+								&__copiedable {
+									border-radius: var(--mobile-border-radius-large-size);
+									display: flex;
+									height: 2.15em;
+									overflow: hidden;
+									width: 100%;
+
+									> input {
+										background-color: rgb(var(--rgb-mobile-bg-user));
+										border: none;
+										flex-grow: 1;
+										font-size: 0.929em;
+										height: 100%;
+										padding-left: 1em;
+									}
+
+									> button {
+										align-items: center;
+										background-color: rgb(var(--rgb-yellow));
+										border: none;
+										border-radius: 0;
+										display: flex;
+										height: 100%;
+										justify-content: center;
+										margin: 0 !important;
+										padding: 0;
+										width: 2.43em;
+
+										img {
+											margin: 0;
+										}
+									}
+								}
+							}
+
+							&__share {
+								display: flex;
+								flex-direction: column;
+								margin-bottom: 1.5em;
+								margin-top: 1.5em !important;
+
+								> p {
+									color: rgb(177, 177, 177);
+									font-weight: 600 !important;
+									margin-bottom: 0.9em;
+								}
+
+								> div {
+									margin: 0 !important;
+								}
+							}
+						}
+					}
+
+					&:nth-child(3) {
+						border: none !important;
+
+						.referral-container {
+							&__friend {
+								border-bottom: 1px solid rgb(var(--rgb-main-background-color));
+								border-top: 1px solid rgb(var(--rgb-main-background-color));
+								padding-top: 1.43rem;
+
+								p:first-child {
+									color: rgb(177, 177, 177);
+									font-weight: 600 !important;
+								}
+							}
+
+							&__Referral__Commission-value {
+								color: rgb(177, 177, 177);
+								font-weight: 600 !important;
+								padding-top: 1.43rem;
+							}
+
+							&__coin-name {
+								color: rgb(var(--rgb-text-white));
+								font-weight: 600 !important;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&__table {
+			margin-top: 3rem;
+
+			.container {
+				padding: 0 1rem;
+			}
+
+			&__row {
+				margin: 0;
+
+				&__col-left,
+				&__col-right {
+					background-color: rgb(var(--rgb-body-background-color));
+					border-radius: var(--mobile-border-radius-large-size);
+					margin-bottom: 2.65em;
+					min-height: 10rem;
+					padding: 0.714em 0;
+
+					h4 {
+						color: rgb(var(--rgb-text-white));
+						font-size: 1rem;
+						font-weight: 600;
+						margin: 0;
+						padding: var(--mobile-main-padding-size);
+					}
+
+					> .row:nth-child(2) {
+						background-color: rgb(var(--rgb-main-background-color));
+						margin: 0 !important;
+						padding: 0.4em;
+
+						> div {
+							color: rgb(183, 183, 183);
+							padding: 0;
+						}
+					}
+
+					> div:last-child {
+						display: none !important;
+					}
+				}
+			}
+		}
+	}
+}

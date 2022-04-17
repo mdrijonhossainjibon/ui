@@ -1,0 +1,343 @@
+.td-tabs {
+	.td-tabs-rtl {
+		direction: rtl;
+	}
+
+	.td-tabs-dropdown-rtl {
+		direction: rtl;
+	}
+
+	.td-tabs-top {
+		flex-direction: column;
+
+		.td-tabs-ink-bar {
+			bottom: 0;
+			height: 3px;
+		}
+	}
+
+	.td-tabs-bottom {
+		flex-direction: column;
+
+		.td-tabs-ink-bar {
+			height: 3px;
+			top: 0;
+		}
+
+		.td-tabs-nav {
+			order: 1;
+		}
+
+		.td-tabs-content {
+			order: 0;
+		}
+	}
+
+	.td-tabs-left.td-tabs-editable {
+		.td-tabs-tab {
+			padding-right: 32px;
+		}
+	}
+
+	.td-tabs-right.td-tabs-editable {
+		.td-tabs-tab {
+			padding-right: 32px;
+		}
+	}
+
+	.td-tabs-left {
+		.td-tabs-nav-wrap {
+			flex-direction: column;
+		}
+
+		.td-tabs-ink-bar {
+			right: 0;
+			width: 3px;
+		}
+
+		.td-tabs-nav {
+			flex-direction: column;
+			min-width: 50px;
+		}
+
+		.td-tabs-nav-list {
+			flex: 1 0 auto;
+			flex-direction: column;
+		}
+
+		.td-tabs-nav-operations {
+			flex: 1 0 auto;
+			flex-direction: column;
+		}
+	}
+
+	.td-tabs-right {
+		.td-tabs-nav-wrap {
+			flex-direction: column;
+		}
+
+		.td-tabs-ink-bar {
+			left: 0;
+			width: 3px;
+		}
+
+		.td-tabs-nav {
+			flex-direction: column;
+			min-width: 50px;
+			order: 1;
+		}
+
+		.td-tabs-nav-list {
+			flex: 1 0 auto;
+			flex-direction: column;
+		}
+
+		.td-tabs-nav-operations {
+			flex: 1 0 auto;
+			flex-direction: column;
+		}
+
+		.td-tabs-content {
+			order: 0;
+		}
+	}
+
+	.td-tabs-content {
+		display: flex;
+		width: 100%;
+	}
+
+	.td-tabs-content-holder {
+		flex: auto;
+	}
+
+	.td-tabs-content-animated {
+		transition: margin 0.3s;
+	}
+
+	.td-tabs-tabpane {
+		flex: none;
+		width: 100%;
+	}
+
+	.td-tabs-dropdown {
+		border: 1px solid black;
+		max-height: 200px;
+		overflow: auto;
+		position: absolute;
+	}
+
+	.td-tabs-dropdown-hidden {
+		display: none;
+	}
+
+	.td-tabs-dropdown-menu {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.td-tabs-dropdown-menu-item {
+		padding: 4px 8px;
+	}
+
+	.td-tabs-dropdown-menu-item-selected {
+		background: red;
+	}
+
+	.td-tabs-dropdown-menu-item-disabled {
+		cursor: not-allowed;
+		opacity: 0.3;
+	}
+
+	.td-tabs-nav {
+		display: flex;
+		flex: none;
+		position: relative;
+
+		.td-tabs-tab-btn,
+		.td-tabs-extra-content {
+			align-items: center;
+			display: flex;
+			height: 100%;
+			justify-content: center;
+		}
+	}
+
+	.td-tabs-nav-measure {
+		display: inline-block;
+		display: flex;
+		flex: auto;
+		overflow: hidden;
+		position: relative;
+		transform: translate(0);
+		white-space: nowrap;
+	}
+
+	.td-tabs-nav-wrap {
+		display: inline-block;
+		display: flex;
+		flex: auto;
+		overflow: hidden;
+		position: relative;
+		transform: translate(0);
+		white-space: nowrap;
+	}
+
+	.td-tabs-nav-measure-ping-left {
+		&::before {
+			border-left: 1px solid red;
+			bottom: 0;
+			content: '';
+			left: 0;
+			position: absolute;
+			top: 0;
+		}
+	}
+
+	.td-tabs-nav-measure-ping-right {
+		&::after {
+			border-right: 1px solid red;
+			bottom: 0;
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	.td-tabs-nav-wrap-ping-left {
+		&::before {
+			border-left: 1px solid red;
+			bottom: 0;
+			content: '';
+			left: 0;
+			position: absolute;
+			top: 0;
+		}
+	}
+
+	.td-tabs-nav-wrap-ping-right {
+		&::after {
+			border-right: 1px solid red;
+			bottom: 0;
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	.td-tabs-nav-measure-ping-top {
+		&::before {
+			border-top: 1px solid red;
+			content: '';
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	.td-tabs-nav-measure-ping-bottom {
+		&::after {
+			border-top: 1px solid red;
+			bottom: 0;
+			content: '';
+			left: 0;
+			position: absolute;
+			right: 0;
+		}
+	}
+
+	.td-tabs-nav-wrap-ping-top {
+		&::before {
+			border-top: 1px solid red;
+			content: '';
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	.td-tabs-nav-wrap-ping-bottom {
+		&::after {
+			border-top: 1px solid red;
+			bottom: 0;
+			content: '';
+			left: 0;
+			position: absolute;
+			right: 0;
+		}
+	}
+
+	.td-tabs-nav-list {
+		display: flex;
+		position: relative;
+		transition: transform 0.3s;
+	}
+
+	.td-tabs-nav-operations {
+		display: flex;
+	}
+
+	.td-tabs-nav-operations-hidden {
+		pointer-events: none;
+		position: absolute;
+		visibility: hidden;
+	}
+
+	.td-tabs-nav-more {
+		border: 1px solid blue;
+	}
+
+	.td-tabs-nav-add {
+		border: 1px solid green;
+	}
+
+	.td-tabs-tab {
+		align-items: center;
+		border: 0;
+		cursor: pointer;
+		display: flex;
+		font-weight: lighter;
+		margin: 0;
+		outline: none;
+		position: relative;
+	}
+
+	.td-tabs-tab-btn {
+		background: transparent;
+		border: 0;
+		font-weight: inherit;
+		line-height: 32px;
+	}
+
+	.td-tabs-tab-remove {
+		background: transparent;
+		border: 0;
+
+		&:hover {
+			color: red;
+		}
+	}
+
+	.td-tabs-tab-active {
+		font-weight: bolder;
+	}
+
+	.td-tabs-ink-bar {
+		background: red;
+		pointer-events: none;
+		position: absolute;
+	}
+
+	.td-tabs-ink-bar-animated {
+		transition: all 0.3s;
+	}
+
+	.td-tabs-extra-content {
+		flex: none;
+	}
+}

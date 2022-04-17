@@ -1,0 +1,112 @@
+.td-referral-content {
+	padding: 0 10%;
+
+	&__wrapper {
+		background: var(--body-background-color);
+		border-radius: 10px;
+		padding: 15px;
+	}
+
+	&__table {
+		padding: 80px 0 100px 0;
+
+		&__row {
+			&__col-left {
+				position: relative;
+
+				h4 {
+					background: var(--body-background-color);
+					border-top-left-radius: 10px;
+					border-top-right-radius: 10px;
+					color: #fff;
+					font-size: 18px;
+					line-height: 27px;
+					margin-bottom: 0;
+					padding: 12px;
+				}
+
+				&__loading {
+					height: 100%;
+					padding-top: 3rem;
+					position: absolute;
+					width: 100%;
+					z-index: 20;
+				}
+
+				&__friends {
+					background: var(--body-background-color);
+					border-bottom-left-radius: 10px;
+					border-bottom-right-radius: 10px;
+
+					&-email {
+						-webkit-box-orient: vertical;
+						display: -webkit-box;
+						-webkit-line-clamp: 1;
+						overflow: hidden;
+					}
+
+					&-time {
+						-webkit-box-orient: vertical;
+						display: -webkit-box;
+						-webkit-line-clamp: 1;
+						overflow: hidden;
+					}
+				}
+			}
+
+			&__col-right {
+				h4 {
+					background: var(--body-background-color);
+					border-top-left-radius: 10px;
+					border-top-right-radius: 10px;
+					color: #fff;
+					font-size: 18px;
+					line-height: 27px;
+					margin-bottom: 0;
+					padding: 12px;
+				}
+
+				&__commision {
+					border-bottom-left-radius: 10px;
+					border-bottom-right-radius: 10px;
+
+					&-email {
+						-webkit-box-orient: vertical;
+						display: -webkit-box;
+						-webkit-line-clamp: 2;
+						overflow: hidden;
+					}
+				}
+			}
+		}
+
+		&-pagination {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			margin-top: 10px;
+			padding-left: 0;
+
+			li {
+				align-items: center;
+				background-color: transparent;
+				border: none;
+				border-radius: 50%;
+				color: #fff;
+				cursor: pointer;
+				display: flex;
+				font-size: 14px;
+				height: 30px;
+				justify-content: center;
+				outline: none;
+				text-align: center;
+				transition: all 0.3s;
+				width: 30px;
+			}
+
+			.active {
+				background-color: rgb(47, 182, 126) !important;
+			}
+		}
+	}
+}

@@ -1,0 +1,150 @@
+.td-pg-referral {
+	overflow-x: hidden;
+	padding-bottom: 3rem;
+
+	&__banner {
+		img {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 100%;
+		}
+	}
+
+	&__rank {
+		padding: 50px 10%;
+
+		&__box {
+			&__row {
+				background: var(--body-background-color);
+				border-radius: 10px;
+				box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+				display: flex;
+				justify-content: space-between;
+				padding: 15px;
+
+				&__rank {
+					display: flex;
+					justify-content: center;
+
+					&__mail {
+						-webkit-box-orient: vertical;
+						color: #fff;
+						display: -webkit-box;
+						font-size: 14px;
+						-webkit-line-clamp: 1;
+						overflow: hidden;
+					}
+
+					&__commision {
+						-webkit-box-orient: vertical;
+						color: var(--yellow);
+						display: -webkit-box;
+						font-size: 14px;
+						-webkit-line-clamp: 1;
+						overflow: hidden;
+					}
+				}
+
+				&__commision {
+					align-items: flex-end;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					margin-bottom: -8px;
+
+					&__title {
+						color: #fff;
+						font-size: 13px;
+						line-height: 19px;
+						margin-bottom: 6px;
+					}
+
+					&__coin-name {
+						background-color: var(--yellow);
+						border-radius: 10px;
+						color: #fff;
+						font-size: 14px;
+						line-height: 21px;
+						padding: 0.3rem 0.7rem;
+					}
+				}
+			}
+		}
+	}
+
+	&__loggedIn {
+		&__userLogIn {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 20vh;
+
+			/* background-color: #0000;
+				opacity: .5; */
+			position: relative;
+
+			&__wrapper {
+				&__desription {
+					color: #fff;
+					font-size: 14px;
+					line-height: 21px;
+					margin-bottom: 20px;
+				}
+
+				&__login {
+					align-items: center;
+					display: flex;
+					justify-content: center;
+
+					button {
+						background-color: var(--yellow);
+						border: none;
+						border-radius: 10px;
+						color: #fff;
+						padding: 6px 20px;
+						text-transform: uppercase;
+					}
+
+					p {
+						color: #fff;
+						font-size: 13px;
+						line-height: 19px;
+						margin-bottom: 0;
+						margin-left: 10px;
+						margin-top: 0;
+
+						span {
+							color: #00bbf9;
+							cursor: pointer;
+							font-size: 13px;
+							line-height: 19px;
+							margin-left: 10px;
+
+							&:hover {
+								border-bottom: 1px solid #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__detail {
+		background: var(--body-background-color);
+		padding: 50px 10%;
+
+		&__container {
+			h2 {
+				margin-bottom: 50px;
+				text-align: center;
+			}
+
+			&__notice {
+				background: #0085ff;
+				padding: 26px 60px;
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+.td-mobile-cpn-history-table {
+	background: var(--secondary-background-color);
+	border-radius: 1%;
+	box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.15);
+	padding: 0.5em;
+
+	&__row {
+		&__amount {
+			color: white;
+			display: flex;
+			font-size: 0.875em;
+			font-weight: 700;
+
+			&-value {
+				margin-right: 0.3em;
+			}
+
+			&-currency {
+				text-transform: uppercase;
+			}
+		}
+
+		&__date {
+			color: var(--muted-background-color);
+			font-size: 0.75em;
+		}
+	}
+
+	&__table {
+		width: 100%;
+
+		&__body {
+			width: 100%;
+
+			tr {
+				align-items: center;
+				border-bottom: 1px solid rgba(132, 142, 156, 0.5) !important;
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+			}
+
+			td {
+				padding: 0.625em 0 !important;
+			}
+		}
+	}
+}

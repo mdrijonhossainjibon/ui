@@ -1,0 +1,51 @@
+.td-mobile-screen-wallet-history {
+	.wallet-history-mobile-title {
+		color: #fff;
+		font-size: 1em;
+		font-weight: 500;
+		padding: 0.7em 0.3em;
+	}
+
+	.td-tabs {
+		&-ink-bar {
+			background-color: #2fb67e;
+			bottom: 0;
+			box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.15);
+			height: 2px;
+			left: unset;
+		}
+
+		&-nav {
+			align-items: center;
+			background: var(--secondary-background-color);
+			box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.15);
+
+			&-list {
+				margin: var(--mobile-main-margin-lr-size);
+				position: relative;
+
+				.td-tabs-tab-active {
+					.wallet-history-mobile-title__deposit-active {
+						color: var(--asks);
+						font-weight: 600;
+						text-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+					}
+
+					.wallet-history-mobile-title__withdraw-active {
+						color: var(--bids);
+						font-weight: 600;
+						text-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+					}
+				}
+
+				.td-tabs-tab {
+					margin-right: 1em;
+				}
+			}
+		}
+
+		&-content {
+			padding: var(--mobile-main-padding-size);
+		}
+	}
+}

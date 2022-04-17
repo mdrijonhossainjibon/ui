@@ -1,0 +1,125 @@
+#un-stake {
+	padding: 20px 0;
+
+	.amount-box {
+		align-items: center;
+		background: var(--order-header-color);
+		border: 1px solid rgb(82, 99, 164);
+		border-radius: 50px;
+		box-sizing: border-box;
+		display: flex;
+		flex: 1 1 auto;
+		height: 100%;
+		padding: 0 20px;
+
+		span {
+			color: #fff;
+			font-size: 14px;
+			white-space: nowrap;
+		}
+
+		input {
+			background-color: transparent;
+			border: 0;
+			border-radius: 0;
+			color: #fff;
+			flex: 1 1 auto;
+			font-size: 19px;
+			font-weight: 700;
+			letter-spacing: 0.7px;
+			margin: 0;
+			outline: 0;
+			padding: 0 10px;
+			text-align: right;
+			width: 0;
+		}
+	}
+
+	.period-btn {
+		background-color: #fff;
+		border: 1px solid hsla(0, 0%, 85.5%, 0.5);
+		box-sizing: border-box;
+		color: #fff;
+		cursor: pointer;
+		flex: 0 0 auto;
+		font-size: 15px;
+		height: 40px;
+		line-height: 40px;
+		margin: 0 6px 6px 0;
+		min-width: 110px;
+		outline: none;
+		padding: 0 4px;
+		text-align: center;
+	}
+
+	.period-btn__active {
+		background-color: #30b57e;
+		border-color: #30b57e;
+		color: #fff;
+	}
+
+	.agree {
+		color: rgb(141, 141, 141);
+		display: flex;
+		line-height: 1.5;
+
+		input {
+			background: transparent;
+			border: 1px solid #b5b5b5;
+			box-sizing: border-box;
+			display: inline-block;
+			flex: 0 0 16px;
+			height: 16px;
+			line-height: 1;
+			margin: 0;
+			margin-right: 6px !important;
+			outline: 0;
+			transition: background-color 0.3s;
+			vertical-align: middle;
+			visibility: visible;
+			width: 16px;
+
+			&::before {
+				background: transparents;
+				color: transparent !important;
+				display: block;
+			}
+		}
+	}
+
+	.unstake-btn {
+		align-items: center;
+		-webkit-appearance: none;
+		background-color: var(--yellow);
+		border: 0;
+		border-radius: 50px;
+		color: #fff;
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		font-size: 20px;
+		font-weight: 800;
+		height: 50px;
+		justify-content: center;
+		margin: 0 auto;
+		max-width: 236px;
+		outline: 0;
+		padding: 0;
+		-webkit-tap-highlight-color: transparent;
+		text-align: center;
+		transition: 0.3s;
+		width: 100%;
+
+		&--disabled {
+			background-color: rgba(132, 142, 156, 0.35);
+			color: #fff;
+			cursor: not-allowed;
+		}
+	}
+
+	.amount-number {
+		color: var(--yellow);
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+}

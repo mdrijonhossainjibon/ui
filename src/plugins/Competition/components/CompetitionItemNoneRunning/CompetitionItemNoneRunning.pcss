@@ -1,0 +1,78 @@
+#desktop-competition-item-none-running {
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	cursor: pointer;
+	position: relative;
+
+	.desktop-competition-item__header {
+		position: relative;
+
+		&__type {
+			border-radius: 10px 0;
+			color: #fff;
+			font-size: 1.15rem;
+			left: 0;
+			padding: 0.25rem 1.5rem;
+			position: absolute;
+		}
+
+		.type--stake {
+			background: #2fb67e !important;
+		}
+
+		.type--trade {
+			background: #e76f51 !important;
+		}
+
+		.type--deposit {
+			background: chocolate !important;
+		}
+	}
+
+	.desktop-competition-item__content {
+		padding: 3.5rem 0 1.5rem 0;
+
+		&__info {
+			color: #fff;
+			font-weight: 600;
+
+			&__date {
+				font-size: 1.35rem;
+				line-height: 2rem;
+			}
+
+			&__currency {
+				font-size: 1.5rem;
+				line-height: 2.25rem;
+				padding-top: 1rem;
+			}
+
+			&__prize {
+				font-weight: 600;
+				padding-top: 1rem;
+
+				&--title {
+					color: #c7c7c7;
+					font-size: 1rem;
+					line-height: 19px;
+				}
+
+				&--value {
+					color: var(--system-yellow);
+					font-size: 1.5rem;
+					line-height: 2rem;
+				}
+			}
+		}
+	}
+
+	.desktop-competition-item__icon {
+		img {
+			height: auto;
+			max-height: 80px;
+			max-width: 80px;
+			width: auto;
+		}
+	}
+}

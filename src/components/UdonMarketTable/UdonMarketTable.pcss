@@ -1,0 +1,46 @@
+#udon-market__pagination {
+	background: #172b4c;
+	border-top: 1px solid var(--header-background-color);
+	padding: 40px 0 20px 0;
+	width: 100%;
+
+	.pagination {
+		display: inline-block;
+		margin-bottom: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.pagination li {
+		background-color: var(--header-background-color);
+		border: none;
+		border-radius: 50%;
+		color: #838383;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 1.2rem;
+		height: 32px;
+		margin: 0 5px;
+		outline: none;
+		outline-style: initial;
+		padding: 0.5rem;
+		text-align: center;
+		width: 32px;
+	}
+
+	.next,
+	.previous {
+		background-color: transparent !important;
+		color: #848e9c !important;
+		font-size: 1.4rem !important;
+	}
+
+	.active {
+		background-color: var(--yellow) !important;
+		color: #fff !important;
+	}
+
+	.disabled {
+		cursor: default;
+	}
+}

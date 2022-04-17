@@ -1,0 +1,43 @@
+#mobile-competition-detail-screen {
+	.td-mobile-competition-detail__header {
+		-webkit-align-items: center;
+		align-items: center;
+		background-color: var(--body-background-color);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+		height: 3.75em;
+		left: 0;
+		padding: 1em;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 9999;
+	}
+
+	.td-mobile-competition-detail__header__goback {
+		cursor: pointer;
+	}
+
+	.td-mobile-competition-detail__header__title {
+		color: var(--yellow);
+		font-size: 1.25em;
+		font-weight: 600;
+		margin: 0;
+		text-align: center;
+	}
+
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+
+	.competition-loading {
+		position: absolute;
+		top: 48%;
+		z-index: 1;
+	}
+
+	.competition-background-loading {
+		cursor: not-allowed;
+		opacity: 0.35;
+	}
+}

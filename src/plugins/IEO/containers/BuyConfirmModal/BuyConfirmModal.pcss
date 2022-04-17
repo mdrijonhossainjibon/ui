@@ -1,0 +1,92 @@
+#buy-ieo-desktop-confirm-modal {
+	background: #11223f;
+	border-radius: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	left: 1%;
+	margin: auto;
+	padding-bottom: 20px;
+	position: absolute;
+	top: 25%;
+	width: 98%;
+	z-index: 1;
+
+	.buy-confirm-modal-header {
+		background: rgb(0 0 0 / 15%);
+		font-weight: bold;
+		text-align: center;
+		width: 100%;
+
+		h2 {
+			font-weight: bold;
+		}
+	}
+
+	.bonus {
+		span {
+			color: #fff;
+		}
+	}
+
+	.buy-confirm-modal-body {
+		&__info-price {
+			color: #fff;
+
+			.buy-confirm-modal-body__info-price__mobilize {
+				font-size: 20px;
+				font-weight: 500;
+				line-height: 20px;
+			}
+
+			.buy-confirm-modal-body__info-price__mobilize--up {
+				display: none;
+
+				span {
+					svg {
+						color: rgb(47, 182, 126);
+					}
+				}
+			}
+
+			.buy-confirm-modal-body__info-price__mobilize--down {
+				svg {
+					color: #ffb800;
+				}
+			}
+		}
+	}
+
+	.buy-confirm-modal-footer {
+		display: flex;
+		justify-content: space-around;
+
+		button {
+			border-radius: 15px;
+			color: #fff;
+			font-size: 16px;
+			height: 36px;
+			outline: none;
+
+			/* border: none; */
+		}
+
+		&__cancel {
+			background: #172b4c;
+			border: 0.5px solid #848e9c;
+
+			&:hover {
+				color: #2fb67e;
+			}
+		}
+
+		&__buy {
+			background: #ffb800;
+			border: none;
+
+			&:hover {
+				font-weight: bold;
+			}
+		}
+	}
+}

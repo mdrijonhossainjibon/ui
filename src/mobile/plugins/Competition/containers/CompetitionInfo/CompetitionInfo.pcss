@@ -1,0 +1,91 @@
+.mobile-competition-ranking-detail {
+	background: rgb(var(--rgb-subheader-background-color));
+	border-radius: 10px;
+	font-size: 12px;
+	padding: 1rem;
+	position: relative;
+
+	&__loading {
+		left: 48%;
+		position: absolute;
+	}
+
+	&__title {
+		h4 {
+			color: var(--system-yellow);
+			font-size: 20px;
+			font-weight: bold;
+		}
+	}
+
+	&__description {
+		width: 60%;
+	}
+
+	&__info {
+		position: relative;
+
+		&__update {
+			text-align: left;
+
+			&__title {
+				color: #848e9c;
+			}
+
+			&__value {
+				color: #fff;
+			}
+		}
+
+		&__selection {
+			background-color: rgb(var(--rgb-subheader-background-color));
+			border: 1px solid #848e9c;
+			border-radius: 4px;
+			box-sizing: border-box;
+			cursor: pointer;
+			height: 46px;
+			margin: auto;
+			outline: none;
+			padding-left: 5%;
+			width: 80%;
+
+			option {
+				background-color: rgb(var(--rgb-subheader-background-color));
+				border: none;
+				cursor: pointer;
+				outline: none;
+
+				&:hover,
+				&:focus {
+					background-color: green !important;
+				}
+			}
+		}
+
+		&__button {
+			background: var(--system-yellow);
+			border: none;
+			border: 0.5px solid #848e9c;
+			border-radius: 0.5rem;
+			box-sizing: border-box;
+			color: #fff;
+			cursor: pointer;
+			height: 38px;
+			outline: none;
+			width: 145px;
+		}
+
+		&__button--disable {
+			background-color: #313f60 !important;
+			cursor: not-allowed !important;
+		}
+
+		&__button--upcoming {
+			background-color: rgb(224, 98, 17) !important;
+		}
+
+		&__button--ended {
+			background-color: rgb(189, 52, 33) !important;
+		}
+	}
+}

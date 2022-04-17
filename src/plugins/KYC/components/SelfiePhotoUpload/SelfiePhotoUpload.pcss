@@ -1,0 +1,128 @@
+.selfie-photo-upload {
+	&__heading {
+		h2 {
+			color: var(--yellow);
+			font-size: 24px;
+			margin-bottom: 0 !important;
+		}
+
+		h4 {
+			color: #fff;
+			font-size: 16px;
+			margin-bottom: 20px !important;
+			margin-top: 20px;
+		}
+	}
+
+	&__user {
+		&__photo-doc {
+			position: relative;
+			width: 100%;
+
+			.show_inf_document {
+				left: 90px;
+				position: absolute;
+				top: 16px;
+
+				.get__date,
+				.exchange {
+					color: #000;
+					font-size: 10px;
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.selfie-photo-upload__card-require {
+			display: flex;
+			flex-flow: wrap;
+			justify-content: flex-start;
+
+			&-item {
+				display: flex;
+				flex-direction: row;
+				margin-bottom: 14px;
+
+				img {
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+
+	&__photo {
+		p {
+			color: #fff;
+			font-size: 12px;
+			line-height: 14px;
+			margin: 30px 0;
+		}
+
+		&-upload {
+			align-items: center;
+			background: var(--header-background-color);
+			border-radius: 5px;
+			display: flex;
+			height: 120px;
+			justify-content: center;
+			position: relative;
+
+			input[type='file'] {
+				display: none;
+			}
+
+			label {
+				align-items: center;
+				background: var(--yellow);
+				bottom: 0;
+				color: #ffff;
+				display: flex;
+				font-size: 12px;
+				height: 40px;
+				justify-content: center;
+				left: 0;
+				margin: auto;
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 136px;
+			}
+
+			div {
+				p {
+					color: #fff;
+					display: flex;
+					font-size: 12px;
+					justify-content: center;
+					line-height: 14px;
+				}
+			}
+		}
+	}
+
+	&__action {
+		margin-top: 6rem;
+
+		.btn__anebled {
+			background: var(--yellow);
+			border: navajowhite;
+			border-radius: 30px;
+			color: #fff;
+			cursor: pointer;
+			outline: none;
+			padding: 12px 60px;
+		}
+
+		.btn_disabled {
+			background: var(--button-primary-cta-background-color-disabled);
+			border: navajowhite;
+			border: none;
+			border-radius: 30px;
+
+			/* color: var(--button-primary-cta-text-color-disabled); */
+			cursor: not-allowed;
+			outline: none;
+			padding: 12px 60px;
+		}
+	}
+}

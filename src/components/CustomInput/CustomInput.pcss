@@ -1,0 +1,57 @@
+.custom-input {
+	padding: '1rem 0';
+
+	input {
+		background-color: #182136 !important;
+		border: 1px solid #566e96;
+		border-radius: 50px;
+		box-sizing: border-box;
+	}
+
+	label {
+		background: #11223f;
+		color: #fff;
+		font-size: 12px;
+		left: 2%;
+		margin-top: -8px;
+		padding: 0 calc(var(--gap) * 0.7);
+		position: absolute;
+		top: 0;
+		z-index: 5;
+	}
+
+	input,
+	input:focus {
+		box-shadow: none;
+		color: var(--input-text-color);
+	}
+
+	input:focus-within {
+		border-color: var(--input-border-color-active);
+
+		label {
+			color: var(--input-label-color-active);
+		}
+	}
+
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus {
+		border: 1px solid var(--input-border-color);
+		-webkit-box-shadow: 0 0 0 1000px var(--input-background-color) inset;
+		-webkit-text-fill-color: var(--input-text-color);
+		transition: background-color 5000s ease-in-out 0s;
+	}
+}
+
+.pg-mobile-app .custom-input {
+	font-size: 12px;
+
+	input {
+		font-size: 12px;
+
+		&::placeholder {
+			font-size: 12px;
+		}
+	}
+}

@@ -1,0 +1,73 @@
+.modal.td-cpn__modal {
+	.modal-dialog {
+		justify-content: center;
+	}
+
+	.modal-content {
+		background: #172b4c;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.15);
+		max-width: 424px;
+		overflow: hidden;
+		padding: 0 !important;
+
+		.new__modal-header {
+			background: #11223f;
+			border-bottom: 2px solid var(--system-yellow);
+			padding-bottom: 1rem !important;
+			padding-left: 23px !important;
+			padding-right: 23px !important;
+
+			.modal-title,
+			.close {
+				align-items: center;
+				color: var(--primary-text-color);
+				display: flex;
+				justify-content: center;
+			}
+
+			.modal-title.h4 {
+				flex: 1;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 600;
+				height: 100%;
+				margin: 0;
+				text-align: center;
+				text-transform: uppercase;
+			}
+
+			.close {
+				span:first-child {
+					font-size: 25px;
+				}
+			}
+		}
+
+		.modal-body {
+			padding-bottom: 35px;
+			padding-left: 23px;
+			padding-right: 23px;
+			padding-top: 30px;
+
+			.td-email-form__group {
+				background: transparent;
+				margin-bottom: 20px;
+				position: relative;
+
+				input {
+					background-color: #182136 !important;
+					border: 1px solid #566e96;
+					border-radius: 50px;
+					box-sizing: border-box;
+				}
+			}
+
+			.td-email-form__group--focused {
+				.td-email-form__label {
+					color: var(--input-legend-color-active);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+HTTP/2 200
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT, PATCH, OPTIONS, HEAD
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Credentials: true
+
+[
+  {"id":9,"currency":"btc","name":"Mom","description":null,"data":{"address":"Qun1MM67SnmHrRcuRtbU2HUkembjxuzrgD"},"state":"active", "sent_at":"2021-10-31 00:00:00"},
+  {"id":10,"currency":"btc","name":"Pentagon","description":null,"data":{"address":"1MM67SnmHrRcuRtbQunU2HUkembjxuzrgD"},"state":"pending", "sent_at":"2021-11-02 00:00:00"},
+  {"id":8,"currency":"usd","name":"My local bank","description":null,"data":{"bank_name":"ABC Bank","full_name":"John Smith","account_number":"123456789"},"state":"active", "sent_at":"2021-10-28 00:00:00"}
+]

@@ -1,0 +1,63 @@
+.td-mobile-staking-info {
+	background-color: rgb(var(--rgb-body-background-color));
+	border-radius: var(--mobile-border-radius-large-size);
+	box-shadow: 0 4px 8px rgba(var(--rgb-text-black), 0.15);
+	color: rgb(var(--rgb-text-white));
+	font-weight: 600;
+	padding: 1em;
+
+	&__content {
+		align-content: center;
+		display: flex;
+		gap: 0.9em;
+		margin-bottom: 1em;
+
+		&__image {
+			img {
+				height: 3.571em;
+				margin: 0;
+				width: 3.571em;
+			}
+		}
+
+		&__text {
+			display: flex;
+			flex-direction: column;
+
+			&__name {
+				font-size: 1rem;
+			}
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		gap: 0.5em;
+
+		& > * {
+			align-items: center;
+			border: none;
+			display: flex;
+			height: 2em;
+			justify-content: center;
+			width: calc((100% - 0.5em) / 2);
+		}
+
+		&__trade {
+			background-color: rgb(var(--rgb-yellow));
+			border-radius: var(--mobile-border-radius-full);
+			font-weight: 600;
+		}
+
+		&__view-detail {
+			background-color: rgb(var(--rgb-mobile-bg-button));
+			border-radius: var(--mobile-border-radius-full);
+			color: rgb(var(--rgb-text-white));
+
+			&:hover {
+				color: inherit;
+				text-decoration: none;
+			}
+		}
+	}
+}

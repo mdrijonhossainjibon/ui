@@ -1,0 +1,210 @@
+.footerDesktop-screen {
+	background: var(--body-background-color);
+	background-size: contain;
+	color: white;
+	font-size: 15px;
+	margin-bottom: -20px;
+
+	.container-footer-screen {
+		margin: 0 20px;
+
+		@media screen and (min-width: 1200px) {
+			margin: 0 10%;
+		}
+	}
+
+	.footer {
+		padding-bottom: 20px;
+		padding-top: 45px;
+
+		&__logo {
+			&__img {
+				&:hover {
+					img {
+						transform: translateY(-5px);
+						transition: all 0.5s;
+					}
+				}
+			}
+
+			&__desc {
+				color: var(--default-text-color);
+				max-width: 250px;
+				padding-top: 20px;
+			}
+		}
+
+		&__info {
+			&__title {
+				font-size: 18px;
+				font-weight: 500;
+				letter-spacing: 0.5px;
+			}
+
+			&__item {
+				&__icon {
+					color: var(--yellow);
+					margin-right: 10px;
+				}
+
+				a {
+					color: var(--default-text-color);
+
+					&:hover {
+						color: white;
+						transition: all 0.4s;
+					}
+				}
+
+				link {
+					color: var(--default-text-color);
+
+					&:hover {
+						color: white;
+						transition: all 0.4s;
+					}
+				}
+
+				color: var(--default-text-color);
+				padding-bottom: 2px;
+
+				&:hover {
+					color: white;
+					transition: all 0.4s;
+				}
+			}
+		}
+
+		&__news {
+			&__title {
+				font-size: 18px;
+				font-weight: 500;
+				letter-spacing: 0.5px;
+			}
+
+			&__take-email {
+				&__label {
+					color: var(--default-text-color);
+				}
+
+				&__input {
+					&::placeholder {
+						color: white;
+						opacity: 0.7;
+					}
+
+					background-color: rgb(72, 74, 90);
+					border: 0.5px solid white;
+					border-radius: 10px;
+					color: white;
+					height: 40px;
+					outline: none;
+					padding-left: 10px;
+					width: 200px;
+				}
+
+				&__btn {
+					background: #ffb800;
+					border-radius: 7px;
+					cursor: pointer;
+					margin-left: 15px;
+					padding: 9.5px;
+
+					&:hover {
+						background: rgb(27, 226, 143);
+						transition: all 0.3 ease-out;
+					}
+				}
+			}
+
+			&__list-icon {
+				align-items: center;
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+				margin-top: -18px;
+
+				a {
+					outline: none;
+					text-decoration: none;
+				}
+
+				&__item {
+					a {
+						color: white;
+						outline: none;
+						text-decoration: none;
+					}
+
+					font-size: 40px;
+					padding-right: 20px;
+				}
+			}
+		}
+
+		&__copyright {
+			color: var(--default-text-color);
+			font-size: 14px;
+			padding-bottom: 1.8rem;
+			padding-top: 1.8rem;
+			text-align: center;
+
+			a {
+				font-size: 18px;
+				outline: none;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.white-line {
+		border-bottom: 0.1px solid var(--yellow);
+	}
+
+	@media screen and (max-width: 900px) {
+		font-size: 14px;
+
+		.footer__info__title {
+			font-size: 17px;
+		}
+
+		.footer__news__title {
+			font-size: 17px;
+		}
+
+		.footer__news__take-email__input {
+			padding-left: 5px;
+			width: 120px;
+		}
+
+		.footer__news__list-icon__item {
+			font-size: 30px;
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		font-size: 12px;
+
+		.footer__info__title {
+			font-size: 15px;
+		}
+
+		.footer__news__title {
+			font-size: 15px;
+		}
+
+		.footer__news__take-email__input {
+			width: 100px;
+		}
+	}
+}
+
+/* // pcss cũ để ko bị mất class cho những thằng liên quan */
+
+img {
+	margin-right: 5px;
+}
+
+.pg-logo__img {
+	height: calc(var(--gap) * 8.33);
+}

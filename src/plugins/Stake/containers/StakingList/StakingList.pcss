@@ -1,0 +1,44 @@
+#stake-list-pagination {
+	background: var(--main-background-color) !important;
+	padding: 40px 0 20px 0;
+	width: 100%;
+
+	.pagination {
+		display: inline-block;
+		margin-bottom: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.pagination li {
+		background-color: rgb(--header-order-tab-color);
+		border: none;
+		border-radius: 50%;
+		color: var(--paginate-tab-color);
+		cursor: pointer;
+		display: inline-block;
+		font-size: 1.2rem;
+		height: 32px;
+		margin: 0 5px;
+		outline: none;
+		padding: 0.5rem;
+		text-align: center;
+		width: 32px;
+	}
+
+	.next,
+	.previous {
+		background-color: transparent !important;
+		color: var(--paginate-tab-next-prev-color) !important;
+		font-size: 1.4rem !important;
+	}
+
+	.active {
+		background-color: var(--yellow) !important;
+		color: #fff !important;
+	}
+
+	.disabled {
+		cursor: default;
+	}
+}

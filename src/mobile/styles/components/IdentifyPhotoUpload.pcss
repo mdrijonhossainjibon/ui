@@ -1,0 +1,85 @@
+.mobile-identify-photo-upload {
+	margin-top: 1rem;
+
+	&__form {
+		h2 {
+			color: var(--yellow);
+			font-size: 24px;
+			margin-bottom: 0 !important;
+		}
+	}
+
+	&__card {
+		margin-bottom: 36px;
+		margin-top: 30px;
+	}
+
+	&__card-require {
+		background: var(--body-background-color);
+		border-radius: 5px;
+		display: flex;
+		flex-flow: wrap;
+		justify-content: flex-start;
+		padding: 5px 10px;
+
+		&-item {
+			color: #fff;
+			display: flex;
+			flex-direction: row;
+			font-size: 12px;
+			margin-bottom: 14px;
+
+			img {
+				margin-right: 20px;
+			}
+		}
+	}
+
+	&__photo {
+		p {
+			color: #fff;
+			font-size: 12px;
+			line-height: 14px;
+		}
+
+		&-upload {
+			align-items: center;
+			background: var(--body-background-color);
+			border-radius: 5px;
+			display: flex;
+			height: 150px;
+			justify-content: center;
+			position: relative;
+
+			input[type='file'] {
+				display: none;
+			}
+
+			label {
+				align-items: center;
+				background: var(--yellow);
+				border-radius: 1rem;
+				bottom: 0;
+				color: #fff;
+				display: flex;
+				font-size: 12px;
+				height: 30px;
+				justify-content: center;
+				padding: 1rem;
+				position: absolute;
+				right: 1rem;
+				top: 1rem;
+			}
+
+			div {
+				p {
+					color: #fff;
+					display: flex;
+					font-size: 12px;
+					justify-content: center;
+					line-height: 14px;
+				}
+			}
+		}
+	}
+}

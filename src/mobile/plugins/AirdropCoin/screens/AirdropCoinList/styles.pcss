@@ -1,0 +1,248 @@
+.td-mobile-screen-airdrop-list-coin {
+	color: #fff;
+	min-height: 80vh;
+	padding-bottom: 4vw;
+
+	&--color-yellow {
+		color: var(--yellow);
+	}
+
+	&--color-red {
+		color: #bd3421;
+	}
+
+	&__list {
+		border-radius: 1em;
+		box-shadow: rgb(0 0 0 / 15%) 0 4px 8px -2px;
+		display: grid;
+		grid-auto-rows: auto;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+
+		&__empty {
+			margin: 15vh auto;
+		}
+
+		&__item {
+			background: rgba(23, 43, 76, 1);
+			border-radius: 0.5em;
+			box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+			display: grid;
+			grid-auto-columns: 1fr;
+			grid-gap: 1.2em;
+			margin: 2em 0;
+			padding: 3em;
+			position: relative;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&__status {
+				&--comming {
+					background: #e06211;
+					border-radius: 0 5px 0 17.5px;
+					color: #fff;
+					font-size: 1.4em;
+					font-weight: 600;
+					min-width: 5.8em;
+					padding: 5px 8px;
+					position: absolute;
+					right: 0;
+					text-align: center;
+					text-shadow: 0.1em 0.1em #3d4e6775;
+					top: 0;
+				}
+
+				&--running {
+					background: #2fb67e;
+					border-radius: 0 5px 0 17.5px;
+					color: #fff;
+					font-size: 1.4em;
+					font-weight: 600;
+					min-width: 5.8em;
+					padding: 5px 8px;
+					position: absolute;
+					right: 0;
+					text-align: center;
+					text-shadow: 0.1em 0.1em #3d4e6775;
+					top: 0;
+				}
+
+				&--ended {
+					background: #bd3421;
+					border-radius: 0 5px 0 17.5px;
+					color: #fff;
+					font-size: 1.4em;
+					font-weight: 600;
+					min-width: 5.8em;
+					padding: 5px 8px;
+					position: absolute;
+					right: 0;
+					text-align: center;
+					text-shadow: 0.1em 0.1em #3d4e6775;
+					top: 0;
+				}
+			}
+
+			&__left,
+			&__right,
+			&__mid {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+
+			&__mid {
+				gap: 1em;
+
+				&__bottom,
+				&__top {
+					flex: 1;
+				}
+
+				&__bottom {
+					display: flex;
+					gap: 1em;
+
+					& > div {
+						flex: 1;
+					}
+				}
+			}
+
+			&__right {
+				display: flex;
+				flex-direction: row;
+				gap: 1em;
+				justify-content: center;
+			}
+
+			&__total {
+				position: relative;
+
+				&__claim {
+					height: 2em;
+					position: relative;
+					width: 75%;
+
+					.progress {
+						background-color: rgba(43, 64, 100, 1);
+						height: 100%;
+					}
+
+					&__value {
+						bottom: 0;
+						font-size: 1.2em;
+						left: 0;
+						padding: 0;
+						position: absolute;
+						right: 0;
+						text-align: center;
+					}
+				}
+			}
+
+			&__total,
+			&__ref {
+				text-align: center;
+
+				&__title {
+					font-size: 1.2em;
+					font-weight: 600;
+					margin-bottom: 0.5em;
+				}
+			}
+
+			&__ref {
+				&__desc {
+					font-size: 1.2em;
+				}
+			}
+
+			&__tooltip--btn {
+				font-size: 1.2em;
+			}
+
+			&__title {
+				-webkit-box-orient: vertical;
+				color: #fff;
+				display: -webkit-box;
+				font-size: 1.4em;
+				font-weight: 600;
+				-webkit-line-clamp: 2;
+				margin-bottom: 1em;
+				margin-top: 1em;
+				overflow: hidden;
+				text-align: center;
+				text-overflow: ellipsis;
+			}
+
+			&__desc {
+				color: #fff;
+				font-size: 1.2em;
+				text-align: center;
+			}
+
+			&__link {
+				text-decoration: none !important;
+
+				&,
+				&:link,
+				&:active {
+					color: #fff;
+				}
+
+				&:hover {
+					color: #fff !important;
+				}
+			}
+
+			&__link &__button {
+				background: none;
+				color: inherit;
+
+				&:not(:disabled):hover {
+					text-decoration: none;
+				}
+			}
+
+			&__button {
+				border: 1px solid var(--yellow);
+				border-radius: var(--mobile-border-radius-round);
+				box-shadow: none;
+				color: inherit;
+				font-size: 1.2em;
+				font-weight: 600;
+				outline: none;
+				padding: 0.3em 0;
+				width: 8em;
+
+				&--claim {
+					background-color: var(--yellow);
+					border: 1px solid var(--yellow);
+
+					&:disabled {
+						cursor: not-allowed;
+						opacity: 0.1;
+					}
+				}
+
+				&:disabled {
+					cursor: not-allowed;
+					opacity: 0.5;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		&__list {
+			&__item {
+				&__tooltip--btn {
+					font-size: 1em;
+				}
+			}
+		}
+	}
+}

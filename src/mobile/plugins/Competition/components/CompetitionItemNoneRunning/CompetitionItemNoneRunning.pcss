@@ -1,0 +1,74 @@
+#mobile-competition-item-none-running {
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	cursor: pointer;
+	position: relative;
+
+	.mobile-competition-item__header {
+		position: relative;
+
+		&__type {
+			border-radius: 10px 0;
+			color: #fff;
+			font-size: 10px;
+			left: 0;
+			padding: 0.5rem 1.5rem;
+			position: absolute;
+		}
+
+		.type--stake {
+			background: #2fb67e !important;
+		}
+
+		.type--trade {
+			background: #e76f51 !important;
+		}
+
+		.type--deposit {
+			background: chocolate !important;
+		}
+	}
+
+	.mobile-competition-item__content {
+		padding: 3.5rem 0 1.5rem 0;
+
+		&__info {
+			color: #fff;
+			font-weight: 600;
+
+			&__date {
+				font-size: 1rem;
+			}
+
+			&__currency {
+				font-size: 1.5rem;
+				padding-top: 0.5rem;
+			}
+
+			&__prize {
+				font-weight: 600;
+				padding-top: 0.5rem;
+
+				&--title {
+					color: #c7c7c7;
+					font-size: 1rem;
+				}
+
+				&--value {
+					color: var(--system-yellow);
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+
+	.mobile-competition-item__icon {
+		img {
+			height: auto;
+			max-height: 80px;
+			max-width: 80px;
+			width: auto;
+		}
+	}
+}

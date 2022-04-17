@@ -1,0 +1,16 @@
+.pg-promotion-list {
+	background-color: #0c1a32;
+	display: grid;
+	font-family: sans-serif;
+	grid-auto-rows: 1fr;
+	grid-template-columns: 100%;
+	padding: 0 10%;
+}
+
+/* general mobile device <= 768 px */
+@media only screen and (max-width: 768px) {
+	.pg-promotion-list {
+		grid-template-rows: repeat(126px);
+		padding: 0 5%;
+	}
+}

@@ -1,0 +1,177 @@
+.td-mobile-cpn-current-market-info {
+	&__drawer {
+		.ant-drawer-body {
+			background: var(--secondary-background-color);
+			padding: 0;
+		}
+
+		&__header {
+			margin: var(--mobile-main-margin-size);
+		}
+
+		.td-mobile-cpn-all-market__body {
+			box-shadow: none;
+			padding: 0;
+		}
+	}
+
+	&__header {
+		background: var(--secondary-background-color);
+		border-radius: 3px 3px 0 0;
+		box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.15);
+		font-size: 0.875em;
+		line-height: 1.715em;
+		padding: 0.6em 0.5em;
+
+		img {
+			cursor: pointer;
+			margin: 0;
+		}
+
+		&__name {
+			color: #fff;
+			font-weight: 600;
+		}
+
+		&__percent {
+			font-size: 0.714em;
+			font-weight: 600;
+
+			&--positive {
+				color: var(--header-positive-text-color);
+			}
+
+			&--negative {
+				color: var(--header-negative-text-color);
+			}
+		}
+
+		&__option {
+			position: relative;
+
+			.list-group {
+				bottom: 100;
+				display: none;
+				position: absolute;
+				right: 0;
+				width: max-content;
+				z-index: 1;
+
+				&-item {
+					align-items: center;
+					background-color: var(--main-background-color);
+					color: #fff;
+					display: flex;
+					font-size: 0.8em;
+					padding: 0.2em 0.4em;
+
+					svg {
+						margin-right: 0.5em;
+					}
+
+					&:hover {
+						background-color: #000;
+					}
+				}
+			}
+		}
+	}
+
+	&__content {
+		.pg-trading-chart {
+			background: var(--secondary-background-color);
+			border-radius: 0 0 3px 3px;
+			box-shadow: 0 4px 8px -2px rgb(0 0 0 / 15%);
+			height: 430px;
+			padding: 0.4em 8px var(--mobile-main-padding-size);
+		}
+	}
+
+	&__history {
+		background: var(--secondary-background-color);
+		border-radius: var(--mobile-border-radius-small-size);
+		box-shadow: 0 4px 8px -2px rgb(0 0 0 / 15%);
+
+		/* padding: 0.4em 8px 0.875em; */
+
+		> .td-tabs {
+			> .td-tabs-nav {
+				align-items: center;
+				background-color: rgba(var(--rgb-main-background-color), 0.5);
+				padding: 0 1.125rem;
+
+				.td-tabs-ink-bar {
+					display: none;
+				}
+
+				.td-tabs-nav-list {
+					> .td-tabs-tab {
+						margin: 0 !important;
+
+						.td-tabs-tab-btn {
+							color: rgb(var(--rgb-mobile-gray-color-2));
+							font-size: 0.875em;
+							font-weight: 600;
+							padding: 0.7em 1em !important;
+						}
+					}
+
+					> .td-tabs-tab-active {
+						.td-tabs-tab-btn {
+							background-color: var(--secondary-background-color);
+							color: rgb(var(--rgb-text-white));
+						}
+					}
+				}
+			}
+
+			.td-tabs-content-holder {
+				padding: 1rem 0.563rem;
+			}
+		}
+
+		/* Child tabs */
+		.td-markets-history-list-container {
+			.td-tabs {
+				.td-tabs-nav {
+					background-color: var(--secondary-background-color);
+
+					.td-tabs-nav-list {
+						display: flex;
+						padding: 0;
+						width: 100%;
+
+						.td-tabs-tab {
+							display: flex;
+							justify-content: center;
+							width: 50%;
+						}
+
+						.td-tabs-ink-bar {
+							background-color: var(--system-yellow);
+							display: initial;
+						}
+					}
+				}
+			}
+		}
+
+		.td-mobile-cpn-order-book {
+			margin-bottom: 0.8em;
+			margin-top: 0.4em;
+		}
+
+		div.td-markets-history-list-container {
+			font-size: 0.75em;
+			height: 400px;
+			padding: 0;
+			position: relative;
+
+			.td-table__body {
+				tr td span {
+					height: 100%;
+				}
+			}
+		}
+	}
+}

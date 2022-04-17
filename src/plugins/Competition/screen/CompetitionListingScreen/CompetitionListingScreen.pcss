@@ -1,0 +1,111 @@
+#desktop-competition-listing {
+	.competition-listing__header {
+		width: 100%;
+
+		img {
+			height: auto;
+			margin: 0;
+			max-height: 396px;
+			max-width: 100%;
+			object-fit: cover;
+			padding: 0;
+			width: auto;
+		}
+	}
+
+	.competition-listing__running {
+		&__title {
+			padding: 4.2rem 0;
+
+			h4 {
+				font-size: 30px;
+				line-height: 40.85px;
+			}
+		}
+	}
+
+	.competition-listing__none-running {
+		background: rgb(var(--rgb-input-background-color));
+
+		&__title {
+			color: #999;
+			font-size: 2.5rem;
+			line-height: 40.85px;
+			padding: 52px 0;
+
+			&--upcoming {
+				border-right: 1px solid #7e7e7e;
+				cursor: pointer;
+				padding-right: 33px;
+
+				&:hover {
+					color: #ffff;
+				}
+			}
+
+			&--ended {
+				cursor: pointer;
+				padding-left: 33px;
+
+				&:hover {
+					color: #ffff;
+				}
+			}
+
+			.upcoming--active {
+				color: var(--system-yellow);
+			}
+
+			.ended--active {
+				color: #d03d3c;
+			}
+		}
+	}
+
+	.td-competition-listing-screen-pagination {
+		width: 100%;
+
+		.pagination {
+			display: inline-block;
+			margin-bottom: 0;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		.pagination li {
+			background-color: rgb(--header-order-tab-color);
+			border: none;
+			border-radius: 50%;
+			color: var(--paginate-tab-color);
+			cursor: pointer;
+			display: inline-block;
+			font-size: 1.2rem;
+			height: 32px;
+			margin: 0 5px;
+			outline: none;
+			padding: 0.5rem;
+			text-align: center;
+			width: 32px;
+		}
+
+		.next,
+		.previous {
+			background-color: transparent !important;
+			color: var(--paginate-tab-next-prev-color) !important;
+			font-size: 1.4rem !important;
+		}
+
+		.active {
+			background-color: var(--yellow) !important;
+			color: #fff !important;
+		}
+
+		.disabled {
+			cursor: default;
+		}
+	}
+
+	.loading-competition {
+		padding-bottom: 4.2rem;
+	}
+}

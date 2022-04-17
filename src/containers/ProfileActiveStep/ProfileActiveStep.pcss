@@ -1,0 +1,73 @@
+.td-pg-profile__active-step {
+	background-color: #002145;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	overflow: hidden;
+	padding: 20px;
+	position: relative;
+
+	&__mask-icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	&__title {
+		font-weight: 700px;
+	}
+
+	&__content {
+		margin-top: 20px;
+
+		&__item {
+			position: relative;
+			width: 210px;
+
+			&:not(:first-child) {
+				::before {
+					background-color: #c4c4c4;
+					content: '';
+					height: 1px;
+					position: absolute;
+					right: 100%;
+					top: calc(21px / 2);
+					width: 100%;
+				}
+			}
+
+			&__step {
+				align-items: center;
+				background-color: #c4c4c4;
+				border-radius: 50%;
+				color: #000;
+				display: flex;
+				height: 21px;
+				justify-content: center;
+				position: relative;
+				width: 21px;
+				z-index: 2;
+			}
+
+			&__step--active {
+				background-color: #ecb22d;
+			}
+
+			&__title {
+				margin-top: 20px;
+			}
+
+			&__desc {
+				display: block;
+				padding-right: 40px;
+			}
+
+			&__action {
+				background-color: rgb(47, 182, 126);
+
+				&:hover {
+					background-color: rgba(47, 182, 126, 0.8);
+				}
+			}
+		}
+	}
+}

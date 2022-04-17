@@ -1,0 +1,224 @@
+.td-pg-wallets-screen {
+	border-radius: 10px;
+	min-height: 100vh;
+	padding: 0 10%;
+
+	&__body {
+		background-color: #11223f;
+		border-radius: 10px;
+		margin-top: 1rem;
+		padding: 25px;
+
+		&__search-input {
+			background: #11223f;
+			border: 0.5px solid #848e9c;
+			border-radius: 100px;
+			box-sizing: border-box;
+			display: flex;
+			height: 45px;
+			position: relative;
+			width: 20rem;
+
+			input {
+				background: #11223f;
+				border: none;
+				border-radius: 50px;
+				color: #fff;
+				font-size: 16px;
+				height: 100%;
+				outline: none;
+				padding-left: 2rem;
+				width: 80%;
+			}
+
+			.icon-search {
+				width: 20%;
+			}
+
+			::placeholder {
+				color: #434f64 !important;
+			}
+
+			svg {
+				position: absolute;
+				right: 5%;
+				top: 30%;
+			}
+		}
+	}
+
+	.deposit-button {
+		background-color: transparent;
+		border: none;
+		border-radius: 10px;
+		color: #52b464;
+		display: inline-block;
+		margin-right: 40px;
+		outline: none;
+		padding: 0.5rem 1rem;
+		text-align: center;
+		text-decoration: none;
+		transition: all 0.2s;
+	}
+
+	.deposit-button:hover {
+		background-color: var(--yellow);
+		color: #0c1a32;
+	}
+
+	.deposit-button:focus {
+		outline: none;
+	}
+
+	.deposit-button:hover:disabled {
+		background-color: transparent;
+		color: #52b464;
+		cursor: not-allowed;
+	}
+
+	.withdraw-button {
+		background-color: transparent;
+		border: none;
+		border-radius: 10px;
+		color: #0085ff;
+		display: inline-block;
+		margin-right: 5px;
+		outline: none;
+		padding: 0.5rem 0;
+		padding: 0.5rem 1rem;
+		text-align: center;
+		text-decoration: none;
+		transition: all 0.2s;
+	}
+
+	.withdraw-button:hover:disabled {
+		background-color: transparent;
+		color: #0085ff;
+		cursor: not-allowed;
+	}
+
+	.withdraw-button:focus {
+		outline: none;
+	}
+
+	.withdraw-button:hover {
+		background-color: var(--yellow);
+		color: #0c1a32;
+	}
+
+	.checkbox-input {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+		.checkbox {
+			--background: #fff;
+			--border: #d1d6ee;
+			--border-hover: #bbc1e1;
+			--border-active: #182034;
+			--tick: #fff;
+
+			position: relative;
+
+			input,
+			svg {
+				display: block;
+				height: 21px;
+				width: 21px;
+			}
+
+			input {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				background: var(--background);
+				border: 2px solid #5d76b5;
+				border-radius: 4px;
+				box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+				cursor: pointer;
+				margin: 0;
+				outline: none;
+				padding: 0;
+				position: relative;
+				transition: box-shadow 0.3s;
+
+				&:hover {
+					--s: 2px;
+					--b: var(--border-hover);
+				}
+
+				&:checked {
+					--b: var(--border-active);
+				}
+			}
+
+			svg {
+				fill: none;
+				height: 21px;
+				left: 0;
+				pointer-events: none;
+				position: absolute;
+				stroke: var(--stroke, var(--border-active));
+				stroke-linecap: round;
+				stroke-linejoin: round;
+				stroke-width: 2px;
+				top: 0;
+				transform: scale(var(--scale, 1)) translateZ(0);
+				width: 21px;
+			}
+
+			&.path {
+				input {
+					&:checked {
+						--s: 2px;
+
+						transition-delay: 0.4s;
+
+						& + svg {
+							--a: 16.1 86.12;
+							--o: 102.22;
+						}
+					}
+				}
+
+				svg {
+					stroke-dasharray: var(--a, 86.12);
+					stroke-dashoffset: var(--o, 86.12);
+					transition: stroke-dasharray 0.6s, stroke-dashoffset 0.6s;
+				}
+			}
+
+			&.bounce {
+				--stroke: var(--tick);
+
+				input {
+					&:checked {
+						--s: 11px;
+
+						& + svg {
+							animation: bounce 0.4s linear forwards 0.2s;
+						}
+					}
+				}
+
+				svg {
+					--scale: 0;
+				}
+			}
+		}
+
+		@keyframes bounce {
+			50% {
+				transform: scale(1.2);
+			}
+
+			75% {
+				transform: scale(0.9);
+			}
+
+			100% {
+				transform: scale(1);
+			}
+		}
+	}
+}

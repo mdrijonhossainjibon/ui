@@ -1,0 +1,378 @@
+.pg-profile-two-factor-auth {
+	display: block;
+	margin: 0 auto;
+	width: 535px;
+
+	&__header {
+		background: var(--secondary-background-color);
+		border-bottom: 2px solid var(--system-yellow);
+		color: var(--primary-text-color);
+		font-size: calc(var(--gap) * 2.33);
+		font-style: normal;
+		height: calc(var(--gap) * 9.66);
+		line-height: calc(var(--gap) * 9.66);
+		text-transform: uppercase;
+
+		img {
+			cursor: pointer;
+		}
+	}
+
+	&__copyablefield {
+		display: flex;
+		justify-content: space-between;
+		padding-left: calc(var(--gap) * 11.5);
+		position: relative;
+
+		&__container {
+			position: relative;
+			width: 100%;
+
+			legend {
+				background-color: var(--secondary-background-color);
+				font-size: 1em;
+				left: 5%;
+				line-height: 1.375em;
+				padding: 0 3px;
+				position: absolute;
+				top: -10px;
+				width: auto;
+				z-index: 5;
+			}
+
+			&__box-copy {
+				align-items: center;
+				display: flex;
+				justify-content: space-between;
+
+				&__text {
+					background-color: var(--secondary-background-color);
+					border: 1px solid var(--mobile-input-border-color);
+					border-radius: 5px;
+					box-sizing: border-box;
+					font-size: 1rem;
+					margin-top: 0;
+					padding: 1rem;
+					width: 75%;
+
+					input {
+						background-color: inherit;
+						border-style: hidden;
+						color: #fff;
+						font-size: 1em;
+						font-weight: 600;
+						line-height: 1.375em;
+						width: 100%;
+
+						&:focus {
+							outline: none;
+						}
+					}
+				}
+
+				&__btn {
+					button {
+						background: rgb(255, 184, 0);
+						border: none;
+						border: 1px solid rgb(132, 142, 156);
+						border-radius: 5px;
+						border-radius: 23.5px;
+						color: #fff;
+						line-height: 1em;
+						padding: 1rem;
+					}
+				}
+			}
+
+			&:focus-within {
+				legend {
+					color: var(--yellow);
+				}
+			}
+		}
+
+		fieldset {
+			background: inherit;
+			border-radius: calc(var(--gap) * 0.66);
+			flex-grow: 1;
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+
+			.cr-copyable-text-field {
+				padding: calc(var(--gap) * 0.83) calc(var(--gap) * 0.83) calc(var(--gap) * 0.83) var(--gap);
+
+				.input-group {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+
+					.custom-input {
+						width: 70%;
+
+						label {
+							margin-top: -18px;
+						}
+
+						div {
+							input {
+								background-color: #172b4c;
+								border: 1px solid #566e96;
+								border-radius: 50px;
+								box-sizing: border-box;
+								font-size: 1rem;
+							}
+						}
+					}
+
+					.btn-primary {
+						background-color: var(--yellow);
+						border-radius: 0.3rem;
+					}
+				}
+			}
+
+			&:focus-within {
+				overflow: hidden;
+
+				legend {
+					color: var(--input-legend-color-active) !important;
+				}
+			}
+
+			.cr-deposit-crypto__copyable-title {
+				margin-top: calc(var(--gap) * -1.5);
+				position: absolute;
+				width: max-content;
+			}
+
+			.pg-copyable-text-field {
+				&__input {
+					border: none;
+					padding: calc(var(--gap) * 0.83) calc(var(--gap) * 0.83) calc(var(--gap) * 0.83) var(--gap) !important;
+
+					input {
+						background-color: #172b4c;
+						border: 1px solid #566e96;
+						border-radius: 50px;
+						box-sizing: border-box;
+						color: var(--input-text-color);
+					}
+				}
+			}
+		}
+	}
+
+	&__body {
+		fieldset {
+			border-radius: calc(var(--gap) * 0.6);
+			box-sizing: border-box;
+			color: var(--input-text-color);
+			height: calc(var(--gap) * 6.56);
+			margin: calc(var(--gap) * 2) 0;
+			max-width: 100%;
+			padding-left: 0;
+			width: 100%;
+
+			&:focus-within {
+				border-color: var(--input-border-color-active);
+				color: var(--input-text-color-active);
+			}
+
+			input {
+				background: transparent;
+				border: unset;
+				bottom: 0;
+				color: var(--input-text-color);
+				font-size: calc(var(--gap) * 2);
+				margin-top: calc(var(--gap) * 1.16);
+
+				&::placeholder {
+					color: var(--input-placeholder-color);
+				}
+			}
+		}
+
+		&--input {
+			padding: 0;
+			position: relative;
+			width: 100%;
+
+			.custom-input {
+				padding: 0;
+
+				.input-group {
+					padding: 0;
+
+					input {
+						background-color: var(--secondary-background-color);
+						border: 1px solid var(--mobile-input-border-color);
+						border-radius: 5px;
+						box-sizing: border-box;
+						font-size: 1rem;
+						margin-top: 0;
+						padding: 0;
+						padding-left: 0.625rem;
+					}
+				}
+			}
+		}
+
+		&--text {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			&--last {
+				justify-content: center;
+
+				span {
+					font-size: calc(var(--font-size) * 3);
+				}
+			}
+
+			span {
+				font-size: calc(var(--font-size) * 3);
+			}
+
+			&--group {
+				align-items: center;
+				display: flex;
+				margin: calc(var(--gap) * 2) 0;
+
+				a {
+					color: rgba(var(--primary-cta-color));
+				}
+
+				span {
+					font-size: var(--font-size);
+				}
+
+				div {
+					padding: 0 calc(var(--gap) * 1.5) 0 calc(var(--gap) * 4.16);
+				}
+			}
+		}
+
+		.pg-profile-two-factor-auth__qr {
+			height: calc(var(--big-gap) * 2.66);
+		}
+
+		.cr-input {
+			width: 100%;
+
+			input {
+				color: var(--input-text-color);
+				font-size: var(--font-size);
+				text-align: left;
+				width: 100%;
+			}
+		}
+	}
+
+	&__form {
+		background: var(--body-background-color);
+		box-shadow: 0 10px 15px var(--shadow-color-level-2);
+
+		.cr-copyable-text-field {
+			border: none;
+
+			input {
+				margin: 0;
+			}
+		}
+	}
+
+	&__error {
+		color: var(--system-red);
+	}
+
+	&__info {
+		color: var(--input-text-color);
+	}
+
+	.cr-copyable-text-field {
+		border-color: var(--input-border-color);
+
+		input {
+			color: var(--input-text-color);
+			font-size: var(--font-size);
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.pg-profile-two-factor-auth__qr {
+		height: calc(var(--big-gap) * 2) !important;
+		padding-left: 0 !important;
+	}
+}
+
+@media (max-width: 991px) {
+	.pg-profile-two-factor-auth {
+		width: 100%;
+	}
+
+	.pg-profile-two-factor-auth__qr {
+		height: calc(var(--big-gap) * 1.8) !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.pg-profile-two-factor-auth {
+		color: rgb(132, 142, 156);
+		margin-bottom: 2em;
+		width: 100%;
+
+		&__copyablefield {
+			&__container {
+				&__box-copy {
+					&__text {
+						background: none;
+						border: none;
+						font-size: 1em;
+						font-weight: 600;
+						line-height: 1.375em;
+					}
+
+					&__btn {
+						button {
+							background: #172b4c;
+							border: none;
+							border-radius: 5px;
+							color: #848e9c;
+							font-size: 0.86em;
+							line-height: 1em;
+							padding: 0.7em 0.9em;
+						}
+					}
+				}
+			}
+		}
+
+		&__body {
+			&--text {
+				&--group {
+					& > div > span,
+					a {
+						font-size: 0.9em;
+					}
+				}
+			}
+		}
+	}
+
+	.pg-profile-two-factor-auth__qr {
+		display: block;
+		height: calc(var(--big-gap) * 5) !important;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 576px) {
+	.pg-profile-two-factor-auth__qr {
+		display: block;
+		height: calc(var(--big-gap) * 3) !important;
+		margin: 0 auto;
+	}
+}

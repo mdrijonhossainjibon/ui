@@ -1,0 +1,74 @@
+#deposit-address {
+	position: relative;
+
+	.react-tabs {
+		&__loading {
+			background-color: #172b4cff;
+			display: grid;
+			height: 100%;
+			left: 0;
+			place-items: center;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 10;
+		}
+
+		.rc-tabs-nav-list {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+			.rc-tabs-tab {
+				border-bottom: 4px solid rgb(78, 84, 99);
+				padding: 5px 0;
+				transition: ease-in-out 0.2s;
+				width: 100%;
+
+				.rc-tabs-tab-btn {
+					border: none;
+					cursor: pointer;
+					outline: none;
+					text-align: center;
+				}
+
+				:hover {
+					color: #fff;
+					font-weight: bold;
+				}
+			}
+
+			.rc-tabs-tab-active {
+				border-bottom: 4px solid var(--system-yellow);
+				color: #fff;
+				font-weight: bold;
+			}
+
+			.rc-tabs-ink-bar {
+				display: none;
+			}
+		}
+	}
+
+	.blur-disabled {
+		align-items: center;
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+		background: var(--body-background-color-level-6);
+		content: '';
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 10;
+	}
+
+	.cr-copyable-text-field .input-group .custom-input .input-group-lg input {
+		background-color: #11223f;
+		border-radius: 20px;
+	}
+}

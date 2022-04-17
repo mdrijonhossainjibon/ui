@@ -1,0 +1,54 @@
+.pg-vote {
+	color: white;
+	font-size: 12px;
+	min-height: inherit;
+	padding: 0 10%;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		color: white;
+		font-weight: 600;
+		line-height: 1.8em;
+	}
+
+	&--border {
+		border-radius: 10px;
+		box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.15);
+	}
+
+	&__data__inner--loading {
+		align-items: center;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 9999;
+
+		img {
+			height: 6em;
+			margin: 0;
+			width: 6em;
+		}
+	}
+
+	.container {
+		padding-bottom: 5vw;
+		padding-top: 4vw;
+	}
+
+	&__news {
+		margin-bottom: 4vw;
+	}
+}
+
+@media (max-width: 768px) {
+	.pg-vote {
+		padding: var(--mobile-main-padding-lr-size);
+	}
+}

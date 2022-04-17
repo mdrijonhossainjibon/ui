@@ -1,0 +1,179 @@
+.td-deposit-crypto {
+	background: transparent;
+	color: var(--table-text-color);
+	display: flex;
+	flex-direction: column;
+	font-size: var(--font-size);
+	padding: 0.5em;
+
+	div:nth-child(1) {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__create {
+		align-items: center;
+		justify-content: center !important;
+		padding-top: calc(var(--gap) * 2);
+	}
+
+	.td-deposit-info {
+		background-color: inherit;
+		font-size: calc(var(--gap) * 2.3);
+		line-height: 25px;
+		margin-bottom: calc(var(--gap) * 3);
+		width: 56%;
+	}
+
+	&__copyable {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin-top: calc(var(--gap) * 6);
+
+		fieldset {
+			&:focus,
+			&:focus-within {
+				.td-deposit-crypto__copyable-area {
+					border-color: var(--input-border-color-active);
+				}
+			}
+		}
+
+		.custom-input {
+			width: 80%;
+		}
+
+		&-title {
+			background-color: inherit;
+			color: var(--table-text-color);
+			font-size: calc(var(--gap) * 2);
+			margin-left: var(--gap);
+		}
+
+		&-area {
+			border: 1px solid var(--input-border-color);
+			margin-top: calc(var(--gap) * -1.1);
+
+			.input-group {
+				&:first-child {
+					border-radius: 0.3rem;
+
+					&:focus-within {
+						label,
+						legend {
+							color: var(--input-legend-color-active);
+						}
+
+						border-color: var(--input-border-color-active);
+					}
+				}
+			}
+		}
+
+		.td-copyable-text-field {
+			&__input {
+				background: inherit;
+
+				input {
+					background: unset;
+					color: var(--input-background-color);
+				}
+			}
+		}
+	}
+
+	.qr-code {
+		margin-left: 0.5em;
+		margin-top: 0.5em;
+
+		svg {
+			border: 1px solid var(--primary-text-color);
+		}
+	}
+}
+
+.note {
+	display: flex;
+	justify-content: flex-start;
+
+	&__mobile-right {
+		background-color: inherit;
+		color: #f4ecf7;
+		flex-direction: column !important;
+		font-size: 1em;
+		justify-content: flex-start !important;
+		line-height: 15px;
+		margin-bottom: calc(var(--gap) * 3);
+		width: 70%;
+
+		.textnote {
+			&__mobile-textj {
+				color: wheat;
+				font-weight: 600;
+			}
+		}
+	}
+
+	&__mobile-left {
+		flex-direction: column !important;
+		float: left;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.td-deposit-crypto {
+		padding: 0;
+
+		.td-deposit-info {
+			text-align: center;
+			width: 100%;
+		}
+
+		.td-deposit-crypto__copyable-area {
+			height: calc(var(--gap) * 5);
+
+			.input-group {
+				align-items: center;
+
+				input {
+					font-size: 0.85em;
+				}
+
+				.input-group-append {
+					height: 2.65em;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.note {
+		display: flex;
+		justify-content: flex-start;
+
+		&__mobile-right {
+			background-color: inherit;
+			color: #f4ecf7;
+			flex-direction: column !important;
+			font-size: 0.6em;
+			justify-content: flex-start !important;
+			line-height: 15px;
+			margin-bottom: calc(var(--gap) * 3);
+			width: 70%;
+
+			.textnote {
+				&__mobile-textj {
+					color: wheat;
+					font-weight: 600;
+				}
+			}
+		}
+
+		&__mobile-left {
+			flex-direction: column !important;
+			float: left;
+		}
+	}
+}

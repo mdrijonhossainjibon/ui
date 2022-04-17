@@ -1,0 +1,104 @@
+.identify__information {
+	&__form {
+		h2 {
+			color: var(--yellow);
+			font-size: 24px;
+			margin-bottom: 0 !important;
+		}
+
+		h4 {
+			color: #fff;
+			font-size: 16px;
+			margin-bottom: 20px !important;
+			margin-top: 20px;
+		}
+
+		.form-group {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 2rem;
+
+			&__selected {
+				align-items: center;
+				background: var(--header-background-color);
+				border: 1px solid var(--header-background-color);
+				border-radius: 30px;
+				color: #ffff;
+				display: flex;
+				height: 45px;
+				justify-content: center;
+				padding: 0 20px;
+
+				&__country {
+					background: var(--header-background-color);
+					border: none;
+					color: #ffff;
+					width: 100%;
+
+					&:focus-visible {
+						outline: none;
+					}
+				}
+			}
+
+			.form-control {
+				background: var(--header-background-color);
+				border: 1px solid var(--header-background-color);
+				border-radius: 30px;
+				color: #ffff;
+				font-size: 14px;
+				height: 45px;
+				padding: 0 20px;
+			}
+
+			.dateOfBirth {
+				align-items: center;
+				background: var(--header-background-color);
+				border: 1px solid var(--header-background-color);
+				border-radius: 30px;
+				display: flex;
+				height: 45px;
+				padding: 0 10px;
+
+				.ant-space {
+					.ant-picker {
+						border: none;
+					}
+
+					.ant-picker-focused {
+						border-color: none;
+						border-right-width: none;
+						box-shadow: none;
+						outline: 0;
+					}
+				}
+			}
+		}
+	}
+
+	&__action {
+		margin-top: 6rem;
+
+		.btn__anebled {
+			background: var(--yellow);
+			border: navajowhite;
+			border-radius: 30px;
+			color: #fff;
+			cursor: pointer;
+			outline: none;
+			padding: 12px 60px;
+		}
+
+		.btn_disabled {
+			background: var(--button-primary-cta-background-color-disabled);
+			border: navajowhite;
+			border: none;
+			border-radius: 30px;
+
+			/* color: var(--button-primary-cta-text-color-disabled); */
+			cursor: not-allowed;
+			outline: none;
+			padding: 12px 60px;
+		}
+	}
+}

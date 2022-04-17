@@ -1,0 +1,61 @@
+.td-pg-trading {
+	background: var(--main-background-color);
+	display: grid;
+	font-size: calc(var(--font-size) * 1);
+	gap: 6px;
+	grid-template-columns: 4fr 8fr 4fr;
+	grid-template-rows: 70px 520px minmax(min-content, 300px) 350px;
+	margin-bottom: 6px;
+	padding: 1rem 25px;
+
+	.td-pg-trading__item {
+		border-radius: 5px;
+		position: relative;
+	}
+
+	.td-pg-trading--bg {
+		background-color: var(--trading-body-background);
+	}
+
+	.td-pg-trading__header-toolbar {
+		grid-column: 1/3;
+	}
+
+	.td-pg-trading__market-trading {
+		grid-column: 3/4;
+		grid-row: 1/3;
+	}
+
+	.td-pg-trading__order-book {
+		grid-column: 1/2;
+		grid-row: 2/4;
+	}
+
+	.td-pg-trading__trading-chart {
+		grid-column: 2/3;
+		grid-row: 2/3;
+
+		.pg-trading-chart {
+			height: 100%;
+		}
+	}
+
+	.td-pg-trading__order {
+		grid-column: 2/3;
+		grid-row: 3/4;
+	}
+
+	.td-pg-trading__recent-trade {
+		grid-column: 3/4;
+		grid-row: 3/4;
+	}
+
+	.td-pg-trading__order-history {
+		grid-column: 1/4;
+		grid-row: 4/5;
+	}
+
+	.row {
+		margin: 0;
+	}
+}

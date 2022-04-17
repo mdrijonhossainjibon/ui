@@ -1,0 +1,152 @@
+.cr-deposit-crypto {
+	background: transparent;
+	color: var(--table-text-color);
+	display: flex;
+	flex-direction: column;
+	font-size: var(--font-size);
+	padding: 0.5em;
+
+	div:nth-child(1) {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__create {
+		align-items: center;
+		justify-content: center !important;
+		padding-top: calc(var(--gap) * 2);
+	}
+
+	.cr-deposit-info {
+		background-color: inherit;
+		font-size: calc(var(--gap) * 2.3);
+		line-height: 25px;
+		margin-bottom: calc(var(--gap) * 3);
+		width: 56%;
+	}
+
+	&__copyable {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin-top: calc(var(--gap) * 6);
+
+		input {
+			font-size: 1.1rem !important;
+		}
+
+		fieldset {
+			&:focus,
+			&:focus-within {
+				.cr-deposit-crypto__copyable-area {
+					border-color: var(--input-border-color-active);
+				}
+			}
+		}
+
+		.custom-input {
+			width: 83%;
+		}
+
+		&-title {
+			background-color: inherit;
+			color: var(--table-text-color);
+			font-size: calc(var(--gap) * 2);
+			margin-left: var(--gap);
+		}
+
+		&-area {
+			margin-top: calc(var(--gap) * -1.1);
+
+			.input-group {
+				&:first-child {
+					border-radius: 0.3rem;
+
+					&:focus-within {
+						border-color: var(--input-border-color-active);
+
+						label,
+						legend {
+							color: var(--input-legend-color-active);
+						}
+					}
+				}
+			}
+		}
+
+		.cr-copyable-text-field {
+			&__input {
+				background: inherit;
+
+				input {
+					background: unset;
+					color: var(--input-background-color);
+				}
+			}
+		}
+	}
+
+	.qr-code {
+		margin-left: 0.5em;
+		margin-top: 0.5em;
+
+		svg {
+			border: 1px solid var(--primary-text-color);
+		}
+	}
+}
+
+.note {
+	display: flex;
+	justify-content: flex-start;
+
+	&__right {
+		background-color: inherit;
+		color: #f4ecf7;
+		flex-direction: column !important;
+		font-size: 15px;
+		justify-content: flex-start !important;
+		line-height: 25px;
+		margin-bottom: calc(var(--gap) * 3);
+		width: 70%;
+
+		.textnote {
+			&__textj {
+				color: wheat;
+				font-weight: 600;
+			}
+		}
+	}
+
+	&__left {
+		flex-direction: column !important;
+		float: left;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.cr-deposit-crypto {
+		padding: 0;
+
+		.cr-deposit-info {
+			text-align: center;
+			width: 100%;
+		}
+
+		.cr-deposit-crypto__copyable-area {
+			height: calc(var(--gap) * 5);
+
+			.input-group {
+				align-items: center;
+
+				input {
+					font-size: 0.85em;
+				}
+
+				.input-group-append {
+					height: 2.65em;
+				}
+			}
+		}
+	}
+}

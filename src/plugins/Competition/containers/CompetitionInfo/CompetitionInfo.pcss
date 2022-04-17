@@ -1,0 +1,107 @@
+.competition-ranking-detail {
+	background: rgb(var(--rgb-subheader-background-color));
+	border-radius: 10px;
+	padding-bottom: 58px;
+	padding-top: 58px;
+	position: relative;
+
+	&__loading {
+		left: 48%;
+		position: absolute;
+	}
+
+	&__title {
+		h4 {
+			color: var(--system-yellow);
+			font-size: 36px;
+			font-weight: bold;
+			line-height: 30px;
+		}
+	}
+
+	&__description {
+		width: 60%;
+
+		p {
+			font-size: 18px;
+			line-height: 30px;
+		}
+	}
+
+	&__info {
+		padding: 0 5%;
+		position: relative;
+
+		&__update {
+			line-height: 20px;
+			text-align: left;
+
+			&__title {
+				color: #848e9c;
+				font-size: 18px;
+			}
+
+			&__value {
+				color: #fff;
+				font-size: 20px;
+			}
+		}
+
+		&__selection {
+			background-color: rgb(var(--rgb-subheader-background-color));
+			border: 1px solid #848e9c;
+			border-radius: 4px;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-size: 18px;
+			height: 46px;
+			margin: auto;
+			outline: none;
+			padding-left: 5%;
+			width: 80%;
+
+			option {
+				background-color: rgb(var(--rgb-subheader-background-color));
+				border: none;
+				cursor: pointer;
+				outline: none;
+
+				&:hover,
+				&:focus {
+					background-color: green !important;
+				}
+			}
+		}
+
+		&__button {
+			background: var(--system-yellow);
+			border: none;
+			border: 0.5px solid #848e9c;
+			border-radius: 34px;
+			box-sizing: border-box;
+			color: #fff;
+			cursor: pointer;
+			height: 38px;
+			margin-top: 25px;
+			outline: none;
+			width: 145px;
+
+			/* &:hover {
+				transform: scale(1.2, 1);
+			} */
+		}
+
+		&__button--disable {
+			background-color: #313f60 !important;
+			cursor: not-allowed !important;
+		}
+
+		&__button--upcoming {
+			background-color: rgb(224, 98, 17) !important;
+		}
+
+		&__button--ended {
+			background-color: rgb(189, 52, 33) !important;
+		}
+	}
+}

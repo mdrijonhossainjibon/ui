@@ -1,0 +1,61 @@
+.mobile-custom-input {
+	padding: 0.875em 0;
+
+	input {
+		border-color: var(--input-border-color);
+		font-size: 12px !important;
+
+		&::placeholder {
+			color: var(--mobile-input-placeholder-color);
+		}
+	}
+
+	label {
+		background: var(--secondary-background-color) !important;
+		color: #fff;
+		font-size: 12px;
+		left: 2%;
+		margin-top: -8px;
+		padding: 0 calc(var(--gap) * 0.7);
+		position: absolute;
+		top: 0;
+		z-index: 5;
+	}
+
+	input,
+	input:focus {
+		background-color: rgba(196, 196, 196, 0.28) !important;
+		box-shadow: none;
+		color: #fff !important;
+	}
+
+	input:focus-within {
+		border-color: var(--input-border-color-active);
+
+		label {
+			background-color: var(--secondary-background-color) !important;
+			color: #fff;
+		}
+	}
+
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus {
+		border: 1px solid var(--input-border-color);
+		-webkit-box-shadow: 0 0 0 1000px var(--input-background-color) inset;
+		-webkit-text-fill-color: var(--input-text-color);
+		transition: background-color 5000s ease-in-out 0s;
+	}
+}
+
+.pg-mobile-app .custom-input {
+	font-size: 12px;
+
+	input {
+		font-size: 12px;
+
+		&::placeholder {
+			font-size: 12px;
+		}
+	}
+}

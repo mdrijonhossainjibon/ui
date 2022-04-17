@@ -1,0 +1,225 @@
+#stacking-item {
+	background-color: var(--body-background-color);
+	border-radius: 0.8em;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+
+	&:not(:last-child) {
+		margin-bottom: 2em;
+	}
+
+	button {
+		border: none;
+		outline: none;
+	}
+
+	.staking-item-container {
+		.image {
+			background-color: var(--secondary-background-color);
+			background-position: 50% 50%;
+			background-size: cover;
+			display: flex;
+			gap: normal;
+			height: 30%;
+			width: 100%;
+
+			.logo-image {
+				align-items: center;
+				display: flex;
+				height: 10em;
+				margin: auto;
+				padding: 1.6em 0;
+
+				img {
+					margin: auto;
+					max-height: 100%;
+					max-width: 100%;
+				}
+			}
+		}
+
+		.text {
+			background-color: rgba(23, 43, 76, 1);
+			min-height: 30%;
+			padding: 1.6em 1.6em;
+			padding-bottom: 0;
+
+			.title {
+				color: #fff;
+				font-size: 1.4em;
+				font-weight: 600;
+				margin-bottom: 0.5em;
+				overflow: hidden;
+				padding: 0;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				width: 100%;
+			}
+
+			.reward-container {
+				gap: 1em;
+				justify-content: space-between;
+				padding: 0.5rem 0;
+
+				.reward {
+					flex: 1;
+					font-size: 1em;
+
+					.reward-box {
+						background-color: var(--secondary-background-color);
+						border-radius: 2.2em;
+						box-sizing: border-box;
+						font-weight: 600;
+						padding: 0.8em 0;
+						text-align: center;
+
+						&__rate {
+							color: #fff;
+							font-size: 1em;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+
+		.stake-item__time {
+			margin-top: 1em;
+			padding: 0 1.6em 1em;
+
+			.timer {
+				align-items: center;
+				background: var(--secondary-background-color);
+				border-radius: 0.8em;
+				color: #fff;
+				color: rgba(232, 38, 39, 1) !important;
+				display: flex;
+				font-weight: 600;
+				justify-content: center;
+				padding: 0.8em 0;
+				text-align: center;
+				width: 100%;
+
+				span {
+					font-size: 1em;
+				}
+			}
+		}
+
+		.stake-item__progress {
+			padding: 1.6em 1.6em;
+			padding-top: 0;
+
+			span {
+				font-size: 1em;
+				font-weight: 600;
+			}
+
+			.progress {
+				background: var(--secondary-background-color) !important;
+				border-radius: 0.8em !important;
+				font-size: 1em;
+				height: 3em;
+			}
+		}
+
+		.buttons {
+			gap: 1em;
+			height: 15%;
+			margin-bottom: 0;
+			padding-bottom: 1.6em;
+			padding-left: 1.6em;
+			padding-right: 1.6em;
+			padding-top: 1em;
+
+			.go-stack-btn {
+				align-items: center;
+				background-color: var(--yellow);
+				border-radius: var(--mobile-border-radius-round);
+				color: #fff;
+				display: flex;
+				flex: 1 1 0%;
+				font-size: 1.2em;
+				font-weight: 600;
+				height: 100%;
+				justify-content: center;
+				margin-bottom: 0;
+				padding: 0.4em 0;
+				text-align: center;
+				transition: background-color 0.2s;
+				white-space: nowrap;
+				will-change: background-color;
+
+				:hover {
+					background-color: #35cf8f;
+				}
+			}
+
+			.learn-more-btn {
+				align-items: center;
+				background: rgba(36, 53, 77, 1);
+				border-radius: var(--mobile-border-radius-round);
+				color: #fff;
+				display: flex;
+				flex: 1 1 0%;
+				font-size: 1.2em;
+				font-weight: 600;
+				height: 100%;
+				justify-content: center;
+				margin-bottom: 0;
+				padding: 0.4em 0;
+				text-align: center;
+				transition: background-color 0.2s;
+				white-space: nowrap;
+				will-change: background-color;
+			}
+		}
+	}
+
+	.stacking-item__disabled {
+		align-items: center;
+		background-color: var(--secondary-background-color);
+		color: rgb(255, 255, 255);
+		content: '';
+		display: flex;
+		font-size: 2.7em;
+		height: 100%;
+		justify-content: center;
+		left: 0;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		width: 100%;
+		z-index: 997;
+	}
+
+	.stacking-item__label {
+		align-items: center;
+		border-radius: 0 0.7em 0 1.4em;
+		color: #fff;
+		display: flex;
+		font-size: 1.4em;
+		font-weight: 600;
+		height: 2em;
+		justify-content: center;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 0;
+		width: 7em;
+	}
+
+	.stacking-item__label-upcoming {
+		background-color: #e9c46a;
+	}
+
+	.stacking-item__label-running {
+		background: linear-gradient(90deg, var(--yellow) 0.01%, var(--yellow) 100%);
+	}
+
+	.stacking-item__label-ended {
+		background: #e63946;
+	}
+}

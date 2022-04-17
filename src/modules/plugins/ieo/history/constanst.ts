@@ -1,0 +1,6 @@
+export const FETCH_BUYERS_HISTORY = 'history/FETCH_BUYERS_HISTORY';
+export const FETCH_BUY_HISTORY = 'history/FETCH_BUY_HISTORY';
+export const FETCH_HISTORY_ERROR = 'history/FETCH_HISTORY_ERROR';
+
+export const FETCH_BUYERS_HISTORY_DATA = 'history_data/FETCH_BUYERS_HISTORY_DATA';
+export const FETCH_BUY_HISTORY_DATA = 'history_data/FETCH_BUY_HISTORY_DATA';

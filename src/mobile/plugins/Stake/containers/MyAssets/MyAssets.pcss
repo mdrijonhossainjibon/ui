@@ -1,0 +1,23 @@
+.td-mobile-my-asset {
+	border: 1px solid rgb(var(--rgb-paginate-next-prev-color));
+	border-radius: var(--mobile-border-radius-large-size);
+	font-weight: 600;
+	padding: 1.15em;
+
+	& > * > *:last-child {
+		flex-grow: 1;
+		flex-shrink: 0;
+		text-align: right;
+	}
+
+	&__stake-amount {
+		color: rgb(var(--rgb-blue));
+		display: flex;
+		margin-bottom: 1em;
+	}
+
+	&__availiable {
+		color: rgb(var(--rgb-yellow));
+		display: flex;
+	}
+}

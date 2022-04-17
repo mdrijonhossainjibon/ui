@@ -1,0 +1,123 @@
+.history-screen__filter {
+	background: var(--tab-panel-background-color);
+	color: white;
+	padding-bottom: 20px;
+	padding-left: calc(var(--gap) * 3);
+	padding-top: 0;
+
+	input {
+		background-color: #182136;
+		border: none;
+		border: 1px solid #545e73;
+		border-radius: 5px;
+		box-sizing: border-box;
+		color: #c5c5c5;
+		display: block;
+		height: 30px;
+		margin-right: 5px;
+		outline: none;
+		width: 140px;
+
+		&::-webkit-calendar-picker-indicator {
+			filter: invert(1);
+			padding-right: 10px;
+		}
+	}
+
+	&__date {
+		padding-right: 20px;
+
+		/* padding-top: 20px; */
+
+		&:first-child {
+			.history-screen__filter__date__desc {
+				padding-left: 0;
+			}
+		}
+
+		&__desc {
+			font-size: 14px;
+			line-height: 21px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+
+	&__select {
+		/* padding-top: 20px; */
+
+		&:first-child {
+			.history-screen__filter__select__desc {
+				padding-left: 0;
+			}
+		}
+
+		&__desc {
+			font-size: 14px;
+			line-height: 21px;
+			padding-right: 30px;
+		}
+
+		&__choose {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+
+			.filter-select__coin {
+				display: none;
+			}
+
+			.select-form-control {
+				background-color: #182136 !important;
+				border: none;
+				border-radius: 5px;
+				color: #c5c5c5;
+				display: block;
+				font-size: 1rem;
+				font-weight: 400;
+				height: 30px;
+				line-height: 1.5;
+				margin-right: 10px;
+				outline: none;
+				width: 140px;
+			}
+		}
+	}
+
+	&__select--type {
+		@media (max-width: 823px) {
+			padding-top: 20px;
+		}
+	}
+
+	&__search {
+		/* padding-top: 20px; */
+		@media (max-width: 988px) {
+			padding-top: 20px;
+
+			.history-screen__filter__search__btn--search {
+				margin-left: 0;
+			}
+		}
+
+		&__btn {
+			background-color: #333d56;
+			border: none;
+			border-radius: 5px;
+			height: 30px;
+			margin-left: 10px;
+			margin-right: 10px;
+			transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+			width: 68px;
+
+			&--search {
+				background-color: var(--yellow) !important;
+				color: #fff !important;
+			}
+
+			&:hover {
+				transform: scale(0.95);
+			}
+		}
+	}
+}
